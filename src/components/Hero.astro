@@ -1,0 +1,100 @@
+---
+---
+<section id="home" class="pt-[120px] pb-[80px] px-margin-mobile md:px-margin-desktop max-w-[1280px] mx-auto min-h-[calc(100vh-100px)] flex items-center overflow-x-hidden">
+    <div class="grid grid-cols-1 md:grid-cols-12 gap-gutter w-full">
+        <!-- Left Column: Typography & Action -->
+        <div class="col-span-1 md:col-span-7 flex flex-col justify-center order-2 md:order-1 relative z-10 animate-fade-blur">
+            <!-- Drafting Crosshairs Detail -->
+            <div class="absolute -top-6 -left-6 w-8 h-8 opacity-50 hidden md:block">
+                <div class="w-full h-px bg-on-surface absolute top-1/2"></div>
+                <div class="h-full w-px bg-on-surface absolute left-1/2"></div>
+            </div>
+            <div class="bg-surface-container-lowest border-border-width border-on-surface p-grid-unit inline-block mb-4 w-fit shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]">
+                <span class="font-mono-data text-mono-data text-on-surface uppercase tracking-widest font-bold">SYS.STATUS: ONLINE</span>
+            </div>
+            <h1 class="font-display-xl text-headline-lg-mobile md:text-display-xl text-on-surface mb-2 font-bold uppercase leading-none max-w-2xl">
+                Hello, welcome to my website..
+            </h1>
+            <h2 class="font-headline-lg text-headline-md md:text-headline-lg text-primary bg-secondary-fixed inline-block w-fit px-2 border-y-[4px] border-on-surface mb-8">
+                <span id="rotating-text" class="inline-block transition-opacity duration-300">Frontend</span>
+            </h2>
+            <div class="flex flex-wrap gap-4 mt-2">
+                <a href="#projects" class="btn-neo bg-primary text-on-primary font-headline-md text-headline-md px-8 py-4 border-border-width border-on-surface shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] flex items-center gap-2 cursor-pointer no-underline">
+                    View Projects
+                    <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">arrow_forward</span>
+                </a>
+                <a href="/cv.pdf" target="_blank" rel="noopener noreferrer" class="btn-neo bg-secondary text-on-secondary font-headline-md text-headline-md px-8 py-4 border-border-width border-on-surface shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] flex items-center gap-2 cursor-pointer no-underline">
+                    Download CV
+                    <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">download</span>
+                </a>
+            </div>
+        </div>
+        <!-- Right Column: Profile Image -->
+        <div class="col-span-1 md:col-span-5 flex items-center justify-center order-1 md:order-2 mb-12 md:mb-0 animate-slide-left">
+            <div class="relative w-full max-w-[400px] h-[450px] mx-auto flex items-end justify-center">
+                <!-- Circular background -->
+                <div class="absolute bottom-4 w-[280px] h-[280px] md:w-[320px] md:h-[320px] rounded-full bg-secondary-fixed border-[4px] border-on-surface shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] z-0"></div>
+                <!-- The Image popping out -->
+                <img class="relative z-10 w-[260px] md:w-[300px] object-contain drop-shadow-[8px_8px_0px_rgba(0,0,0,1)]" alt="go-vay" src="/images/my-photo.png"/>
+                
+                <!-- Digital Tape Stickers -->
+                <div class="tape-tl z-20"></div>
+                <!-- Coordinate overlay -->
+                <div class="absolute bottom-0 right-4 z-20 bg-surface-container-lowest border-border-width border-on-surface px-2 py-1 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] rounded-full">
+                    <span class="font-mono-data text-label-caps font-bold">X:104 Y:88 Z:0</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+    .animate-fade-blur {
+        animation: fadeBlur 1s ease-out forwards;
+    }
+    
+    .animate-slide-left {
+        animation: slideLeft 1s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+    }
+
+    @keyframes fadeBlur {
+        0% {
+            opacity: 0;
+            filter: blur(10px);
+            transform: translateY(20px);
+        }
+        100% {
+            opacity: 1;
+            filter: blur(0);
+            transform: translateY(0);
+        }
+    }
+
+    @keyframes slideLeft {
+        0% {
+            opacity: 0;
+            transform: translateX(100%);
+        }
+        100% {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+</style>
+
+<script>
+    const roles = ["Frontend", "Web Development", "IT Support"];
+    let currentIndex = 0;
+    const textElement = document.getElementById('rotating-text');
+    
+    if(textElement) {
+        setInterval(() => {
+            textElement.style.opacity = '0';
+            setTimeout(() => {
+                currentIndex = (currentIndex + 1) % roles.length;
+                textElement.innerText = roles[currentIndex];
+                textElement.style.opacity = '1';
+            }, 300); // Wait for fade out
+        }, 3000); // Change every 3 seconds
+    }
+</script>

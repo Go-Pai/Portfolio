@@ -1,0 +1,45 @@
+---
+import '../styles/global.css';
+const { title = "Portfolio Vay" } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{title}</title>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    
+    <!-- Material Symbols -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+    
+    <!-- Custom Fonts: Archivo Narrow, Space Grotesk, Space Mono -->
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital,wght@0,400..700;1,400..700&family=Space+Grotesk:wght@300..700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet" />
+  </head>
+  <body class="blueprint-bg min-h-screen font-body-md text-body-md text-on-surface overflow-x-hidden selection:bg-secondary selection:text-on-secondary">
+    <!-- Top Navigation Placeholder (We'll put it in index or layout) -->
+    
+    <slot />
+
+    <!-- Optional JS for nav hide on scroll could go here or in a component -->
+    <script>
+        let lastScrollY = window.scrollY;
+        const nav = document.getElementById('topNav');
+
+        if (nav) {
+          window.addEventListener('scroll', () => {
+              if (window.scrollY > lastScrollY && window.scrollY > 100) {
+                  nav.style.transform = 'translateY(-100%)';
+              } else {
+                  nav.style.transform = 'translateY(0)';
+              }
+              lastScrollY = window.scrollY;
+          });
+        }
+    </script>
+  </body>
+</html>

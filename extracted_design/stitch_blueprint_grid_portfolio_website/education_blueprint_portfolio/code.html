@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Education Section</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&amp;family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&amp;family=Archivo+Narrow:wght@400;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .blueprint-grid {
+            background-size: 24px 24px;
+            background-image:
+                linear-gradient(to right, rgba(0, 1, 187, 0.1) 1px, transparent 1px),
+                linear-gradient(to bottom, rgba(0, 1, 187, 0.1) 1px, transparent 1px);
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary-fixed": "#e0e0ff",
+                        "surface-container-lowest": "#ffffff",
+                        "surface": "#f9f9f9",
+                        "surface-container-high": "#e8e8e8",
+                        "on-surface": "#1a1c1c",
+                        "on-secondary-fixed-variant": "#494900",
+                        "surface-container-highest": "#e2e2e2",
+                        "secondary-fixed": "#eaea00",
+                        "error-container": "#ffdad6",
+                        "on-secondary-container": "#666600",
+                        "on-tertiary-fixed-variant": "#474747",
+                        "surface-bright": "#f9f9f9",
+                        "surface-tint": "#343dff",
+                        "surface-container-low": "#f3f3f3",
+                        "inverse-primary": "#bec2ff",
+                        "on-tertiary": "#ffffff",
+                        "surface-dim": "#dadada",
+                        "primary-fixed-dim": "#bec2ff",
+                        "secondary-container": "#e7e700",
+                        "on-surface-variant": "#454558",
+                        "secondary": "#626200",
+                        "outline": "#757589",
+                        "on-secondary-fixed": "#1d1d00",
+                        "primary": "#0001bb",
+                        "primary-container": "#0000ff",
+                        "tertiary": "#353535",
+                        "background": "#f9f9f9",
+                        "inverse-on-surface": "#f1f1f1",
+                        "surface-container": "#eeeeee",
+                        "error": "#ba1a1a",
+                        "on-primary": "#ffffff",
+                        "secondary-fixed-dim": "#cdcd00",
+                        "on-error-container": "#93000a",
+                        "tertiary-fixed": "#e2e2e2",
+                        "on-error": "#ffffff",
+                        "on-tertiary-container": "#bdbdbd",
+                        "surface-variant": "#e2e2e2",
+                        "on-tertiary-fixed": "#1b1b1b",
+                        "on-primary-container": "#b3b7ff",
+                        "on-primary-fixed-variant": "#0000ef",
+                        "tertiary-container": "#4c4c4c",
+                        "on-background": "#1a1c1c",
+                        "on-primary-fixed": "#00006e",
+                        "outline-variant": "#c5c4db",
+                        "tertiary-fixed-dim": "#c6c6c6",
+                        "on-secondary": "#ffffff",
+                        "inverse-surface": "#2f3131"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "shadow-offset": "8px",
+                        "margin-mobile": "16px",
+                        "grid-unit": "8px",
+                        "gutter": "24px",
+                        "border-width": "4px",
+                        "margin-desktop": "48px"
+                    },
+                    "fontFamily": {
+                        "mono-data": ["Space Mono"],
+                        "body-lg": ["Archivo Narrow"],
+                        "display-xl": ["Space Grotesk"],
+                        "headline-lg-mobile": ["Space Grotesk"],
+                        "label-caps": ["Space Mono"],
+                        "body-md": ["Archivo Narrow"],
+                        "headline-md": ["Space Grotesk"],
+                        "headline-lg": ["Space Grotesk"]
+                    },
+                    "fontSize": {
+                        "mono-data": ["14px", { "lineHeight": "1.4", "fontWeight": "400" }],
+                        "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "display-xl": ["72px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "headline-lg-mobile": ["32px", { "lineHeight": "1.2", "fontWeight": "700" }],
+                        "label-caps": ["12px", { "lineHeight": "1.0", "letterSpacing": "0.1em", "fontWeight": "700" }],
+                        "body-md": ["16px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "headline-md": ["24px", { "lineHeight": "1.3", "fontWeight": "700" }],
+                        "headline-lg": ["40px", { "lineHeight": "1.2", "fontWeight": "700" }]
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-surface blueprint-grid text-on-surface min-h-screen pt-[80px]">
+<!-- TopNavBar -->
+<nav class="bg-surface-container-lowest dark:bg-surface-dim font-headline-md text-headline-md md:font-headline-lg md:text-headline-lg fixed top-0 w-full z-50 h-[80px] border-b-[4px] border-on-surface dark:border-on-surface-variant shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] flex justify-between items-center px-margin-mobile md:px-margin-desktop">
+<div class="font-headline-md text-headline-md font-bold text-on-surface dark:text-on-surface">
+            ARCHITECT_v1
+        </div>
+<div class="hidden md:flex gap-gutter">
+<a class="text-on-surface dark:text-on-surface-variant font-bold hover:bg-secondary-fixed dark:hover:bg-secondary-fixed-dim transition-colors duration-200 px-2 py-1 active:translate-x-[4px] active:translate-y-[4px] active:shadow-none" href="#">Home</a>
+<a class="text-on-surface dark:text-on-surface-variant font-bold hover:bg-secondary-fixed dark:hover:bg-secondary-fixed-dim transition-colors duration-200 px-2 py-1 active:translate-x-[4px] active:translate-y-[4px] active:shadow-none" href="#">About</a>
+<a class="text-on-surface dark:text-on-surface-variant font-bold hover:bg-secondary-fixed dark:hover:bg-secondary-fixed-dim transition-colors duration-200 px-2 py-1 active:translate-x-[4px] active:translate-y-[4px] active:shadow-none" href="#">Experience</a>
+<a class="text-primary dark:text-primary-fixed underline decoration-[4px] px-2 py-1 active:translate-x-[4px] active:translate-y-[4px] active:shadow-none" href="#">Education</a>
+<a class="text-on-surface dark:text-on-surface-variant font-bold hover:bg-secondary-fixed dark:hover:bg-secondary-fixed-dim transition-colors duration-200 px-2 py-1 active:translate-x-[4px] active:translate-y-[4px] active:shadow-none" href="#">Projects</a>
+<a class="text-on-surface dark:text-on-surface-variant font-bold hover:bg-secondary-fixed dark:hover:bg-secondary-fixed-dim transition-colors duration-200 px-2 py-1 active:translate-x-[4px] active:translate-y-[4px] active:shadow-none" href="#">Contact</a>
+</div>
+</nav>
+<!-- Main Content -->
+<main class="max-w-[1280px] mx-auto px-margin-mobile md:px-margin-desktop py-margin-desktop">
+<header class="mb-margin-desktop">
+<h1 class="font-display-xl text-display-xl text-on-surface border-b-[4px] border-on-surface inline-block pr-gutter pb-grid-unit">EDUCATION_LOG</h1>
+<p class="font-mono-data text-mono-data text-on-surface-variant mt-grid-unit uppercase">Academic foundation and formal training records.</p>
+</header>
+<!-- Horizontal Grid -->
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-gutter">
+<!-- High School Card -->
+<article class="bg-surface-container-lowest border-[4px] border-on-surface shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] flex flex-col h-full relative">
+<!-- Drafting Box Corners -->
+<div class="absolute top-0 left-0 w-4 h-4 border-t-2 border-l-2 border-on-surface -translate-x-[2px] -translate-y-[2px]"></div>
+<div class="absolute top-0 right-0 w-4 h-4 border-t-2 border-r-2 border-on-surface translate-x-[2px] -translate-y-[2px]"></div>
+<header class="border-b-[4px] border-on-surface p-gutter bg-primary-fixed">
+<div class="flex justify-between items-start mb-grid-unit">
+<span class="inline-block bg-primary text-on-primary font-label-caps text-label-caps px-2 py-1 border-[2px] border-on-surface">SECONDARY</span>
+<span class="font-mono-data text-mono-data text-on-surface font-bold">2014 - 2018</span>
+</div>
+<h2 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface">Metro Technical High</h2>
+</header>
+<div class="p-gutter flex-grow">
+<p class="font-body-lg text-body-lg text-on-surface mb-gutter">
+                        Specialized curriculum focusing on foundational engineering principles, computer science, and advanced mathematics. Graduated with honors and departmental commendation in physics.
+                    </p>
+<h3 class="font-mono-data text-mono-data text-on-surface uppercase border-b-[2px] border-on-surface inline-block mb-grid-unit">Key Achievements</h3>
+<ul class="space-y-0">
+<li class="font-body-md text-body-md text-on-surface py-grid-unit border-b-[4px] border-on-surface hover:bg-secondary-fixed transition-colors duration-200 px-2 flex items-center gap-2">
+<span class="material-symbols-outlined text-primary" data-icon="star">star</span>
+                            Valedictorian, Class of 2018
+                        </li>
+<li class="font-body-md text-body-md text-on-surface py-grid-unit border-b-[4px] border-on-surface hover:bg-secondary-fixed transition-colors duration-200 px-2 flex items-center gap-2">
+<span class="material-symbols-outlined text-primary" data-icon="emoji_events">emoji_events</span>
+                            State Robotics Championship - 1st Place
+                        </li>
+<li class="font-body-md text-body-md text-on-surface py-grid-unit border-b-[4px] border-on-surface hover:bg-secondary-fixed transition-colors duration-200 px-2 flex items-center gap-2">
+<span class="material-symbols-outlined text-primary" data-icon="science">science</span>
+                            Advanced Placement Scholar with Distinction
+                        </li>
+</ul>
+</div>
+<footer class="border-t-[4px] border-on-surface p-gutter bg-surface-container">
+<div class="font-mono-data text-mono-data text-on-surface flex justify-between">
+<span>GPA: 4.0</span>
+<span>LOC: NEW_YORK_NY</span>
+</div>
+</footer>
+</article>
+<!-- University Card -->
+<article class="bg-surface-container-lowest border-[4px] border-on-surface shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] flex flex-col h-full relative">
+<!-- Drafting Box Corners -->
+<div class="absolute top-0 left-0 w-4 h-4 border-t-2 border-l-2 border-on-surface -translate-x-[2px] -translate-y-[2px]"></div>
+<div class="absolute top-0 right-0 w-4 h-4 border-t-2 border-r-2 border-on-surface translate-x-[2px] -translate-y-[2px]"></div>
+<header class="border-b-[4px] border-on-surface p-gutter bg-secondary-fixed">
+<div class="flex justify-between items-start mb-grid-unit">
+<span class="inline-block bg-secondary text-on-secondary font-label-caps text-label-caps px-2 py-1 border-[2px] border-on-surface">TERTIARY</span>
+<span class="font-mono-data text-mono-data text-on-surface font-bold">2018 - 2022</span>
+</div>
+<h2 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface">Institute of Technology</h2>
+</header>
+<div class="p-gutter flex-grow">
+<p class="font-body-lg text-body-lg text-on-surface mb-gutter">
+                        B.S. in Computer Science with a minor in Cognitive Psychology. Coursework emphasized distributed systems, artificial intelligence, and human-computer interaction.
+                    </p>
+<h3 class="font-mono-data text-mono-data text-on-surface uppercase border-b-[2px] border-on-surface inline-block mb-grid-unit">Core Modules</h3>
+<div class="flex flex-wrap gap-2 mb-gutter">
+<span class="inline-block border-[2px] border-on-surface bg-primary-fixed text-on-surface font-mono-data text-mono-data px-2 py-1">CS401: Algorithms</span>
+<span class="inline-block border-[2px] border-on-surface bg-surface-container text-on-surface font-mono-data text-mono-data px-2 py-1">CS450: Machine Learning</span>
+<span class="inline-block border-[2px] border-on-surface bg-primary-fixed text-on-surface font-mono-data text-mono-data px-2 py-1">PSY310: Cognitive Science</span>
+<span class="inline-block border-[2px] border-on-surface bg-secondary-fixed text-on-surface font-mono-data text-mono-data px-2 py-1">CS500: Distributed Systems</span>
+</div>
+</div>
+<footer class="border-t-[4px] border-on-surface p-gutter bg-surface-container">
+<div class="font-mono-data text-mono-data text-on-surface flex justify-between">
+<span>GPA: 3.8</span>
+<span>LOC: BOSTON_MA</span>
+</div>
+</footer>
+</article>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-lowest dark:bg-surface-dim font-mono-data text-mono-data uppercase w-full py-grid-unit border-t-[4px] border-on-surface dark:border-on-surface-variant flex flex-col md:flex-row justify-between items-center px-margin-mobile md:px-margin-desktop gap-gutter mt-margin-desktop">
+<div class="font-label-caps text-label-caps font-bold">
+            © 2024 DESIGN_SYSTEM_ARCHITECT. ALL RIGHTS RESERVED.
+        </div>
+<div class="flex gap-gutter">
+<a class="text-on-surface dark:text-on-surface-variant hover:text-primary-fixed-variant transition-all duration-200" href="#">Twitter</a>
+<a class="text-on-surface dark:text-on-surface-variant hover:text-primary-fixed-variant transition-all duration-200" href="#">GitHub</a>
+<a class="text-on-surface dark:text-on-surface-variant hover:text-primary-fixed-variant transition-all duration-200" href="#">LinkedIn</a>
+</div>
+</footer>
+</body></html>
