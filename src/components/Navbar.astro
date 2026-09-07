@@ -1,63 +1,194 @@
 ---
+
 ---
-<div class="fixed top-6 left-0 w-full z-50 flex justify-center px-4 pointer-events-none" id="topNavWrapper">
-    <div class="w-full max-w-5xl relative pointer-events-auto">
-        <nav class="bg-surface-container-lowest w-full h-[70px] rounded-full border-[4px] border-on-surface shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] flex justify-between items-center px-8 transition-transform duration-300 relative z-20" id="topNav">
-            <div class="font-headline-md text-headline-md font-bold text-on-surface flex-shrink-0 uppercase">
-                go-vay
-            </div>
-            <!-- Desktop Nav Links -->
-            <ul class="hidden md:flex items-center justify-center flex-1 gap-4 lg:gap-8 ml-4">
-                <li><a class="text-primary underline decoration-[4px] hover:bg-secondary-fixed transition-colors duration-200 active:translate-x-[4px] active:translate-y-[4px] active:shadow-none inline-block px-2" href="#home">Home</a></li>
-                <li><a class="text-on-surface font-bold hover:bg-secondary-fixed transition-colors duration-200 active:translate-x-[4px] active:translate-y-[4px] active:shadow-none inline-block px-2" href="#about">About</a></li>
-                <li><a class="text-on-surface font-bold hover:bg-secondary-fixed transition-colors duration-200 active:translate-x-[4px] active:translate-y-[4px] active:shadow-none inline-block px-2" href="#experience">Experience</a></li>
-                <li><a class="text-on-surface font-bold hover:bg-secondary-fixed transition-colors duration-200 active:translate-x-[4px] active:translate-y-[4px] active:shadow-none inline-block px-2" href="#education">Education</a></li>
-                <li><a class="text-on-surface font-bold hover:bg-secondary-fixed transition-colors duration-200 active:translate-x-[4px] active:translate-y-[4px] active:shadow-none inline-block px-2" href="#projects">Projects</a></li>
-                <li><a class="text-on-surface font-bold hover:bg-secondary-fixed transition-colors duration-200 active:translate-x-[4px] active:translate-y-[4px] active:shadow-none inline-block px-2" href="#contact">Contact</a></li>
-            </ul>
-            <!-- Mobile Menu Button -->
-            <button id="mobileMenuBtn" class="md:hidden flex items-center justify-center p-2 border-[4px] border-on-surface bg-primary text-on-primary shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] active:translate-x-[4px] active:translate-y-[4px] active:shadow-none transition-all rounded-full">
-                <span class="material-symbols-outlined">menu</span>
-            </button>
-        </nav>
-        
-        <!-- Mobile Dropdown Menu -->
-        <div id="mobileDropdown" class="absolute top-[80px] left-0 w-full bg-surface-container-lowest border-[4px] border-on-surface shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] p-4 flex flex-col gap-4 opacity-0 pointer-events-none translate-y-[-20px] transition-all duration-300 z-10 md:hidden">
-            <a class="mobile-link text-on-surface font-bold hover:bg-secondary-fixed transition-colors duration-200 p-2 text-center border-b-[4px] border-transparent hover:border-on-surface" href="#home">Home</a>
-            <a class="mobile-link text-on-surface font-bold hover:bg-secondary-fixed transition-colors duration-200 p-2 text-center border-b-[4px] border-transparent hover:border-on-surface" href="#about">About</a>
-            <a class="mobile-link text-on-surface font-bold hover:bg-secondary-fixed transition-colors duration-200 p-2 text-center border-b-[4px] border-transparent hover:border-on-surface" href="#experience">Experience</a>
-            <a class="mobile-link text-on-surface font-bold hover:bg-secondary-fixed transition-colors duration-200 p-2 text-center border-b-[4px] border-transparent hover:border-on-surface" href="#education">Education</a>
-            <a class="mobile-link text-on-surface font-bold hover:bg-secondary-fixed transition-colors duration-200 p-2 text-center border-b-[4px] border-transparent hover:border-on-surface" href="#projects">Projects</a>
-            <a class="mobile-link text-on-surface font-bold hover:bg-secondary-fixed transition-colors duration-200 p-2 text-center border-b-[4px] border-transparent hover:border-on-surface" href="#contact">Contact</a>
-        </div>
+
+<div
+  class="fixed top-6 left-0 w-full z-50 flex justify-center px-4 pointer-events-none"
+  id="topNavWrapper"
+>
+  <div class="w-full max-w-5xl relative pointer-events-auto">
+    <nav
+      class="bg-surface-container-lowest w-full h-[70px] rounded-full border-[4px] border-on-surface shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] flex justify-between items-center px-8 transition-transform duration-300 relative z-20"
+      id="topNav"
+    >
+      <div
+        class="font-headline-md text-headline-md font-bold text-on-surface flex-shrink-0 uppercase"
+      >
+        go-vay
+      </div>
+      <!-- Desktop Nav Links -->
+      <ul
+        class="hidden lg:flex items-center justify-center flex-1 gap-2 lg:gap-4 xl:gap-6 ml-4 text-sm xl:text-base"
+      >
+        <li>
+          <a
+            class="nav-link text-primary underline decoration-[4px] font-bold hover:bg-secondary-fixed transition-colors duration-200 active:translate-x-[4px] active:translate-y-[4px] active:shadow-none inline-block px-2"
+            href="/#home"
+            data-target="home">Home</a>
+        </li>
+        <li>
+          <a
+            class="nav-link text-on-surface font-bold hover:bg-secondary-fixed transition-colors duration-200 active:translate-x-[4px] active:translate-y-[4px] active:shadow-none inline-block px-2"
+            href="/#about"
+            data-target="about">About</a>
+        </li>
+        <li>
+          <a
+            class="nav-link text-on-surface font-bold hover:bg-secondary-fixed transition-colors duration-200 active:translate-x-[4px] active:translate-y-[4px] active:shadow-none inline-block px-2"
+            href="/#experience"
+            data-target="experience">Experience</a>
+        </li>
+        <li>
+          <a
+            class="nav-link text-on-surface font-bold hover:bg-secondary-fixed transition-colors duration-200 active:translate-x-[4px] active:translate-y-[4px] active:shadow-none inline-block px-2"
+            href="/#education"
+            data-target="education">Education</a>
+        </li>
+        <li>
+          <a
+            class="nav-link text-on-surface font-bold hover:bg-secondary-fixed transition-colors duration-200 active:translate-x-[4px] active:translate-y-[4px] active:shadow-none inline-block px-2"
+            href="/#projects"
+            data-target="projects">Projects</a>
+        </li>
+        <li>
+          <a
+            class="nav-link text-on-surface font-bold hover:bg-secondary-fixed transition-colors duration-200 active:translate-x-[4px] active:translate-y-[4px] active:shadow-none inline-block px-2"
+            href="/#certificates"
+            data-target="certificates">Certificates</a>
+        </li>
+        <li>
+          <a
+            class="nav-link text-on-surface font-bold hover:bg-secondary-fixed transition-colors duration-200 active:translate-x-[4px] active:translate-y-[4px] active:shadow-none inline-block px-2"
+            href="/#contact"
+            data-target="contact">Contact</a>
+        </li>
+      </ul>
+      <!-- Mobile Menu Button -->
+      <button
+        id="mobileMenuBtn"
+        class="lg:hidden flex items-center justify-center p-2 border-[4px] border-on-surface bg-primary text-on-primary shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] active:translate-x-[4px] active:translate-y-[4px] active:shadow-none transition-all rounded-full"
+      >
+        <span class="material-symbols-outlined">menu</span>
+      </button>
+    </nav>
+
+    <!-- Mobile Dropdown Menu -->
+    <div
+      id="mobileDropdown"
+      class="absolute top-[80px] left-0 w-full bg-surface-container-lowest border-[4px] border-on-surface shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] p-4 flex flex-col gap-4 opacity-0 pointer-events-none translate-y-[-20px] transition-all duration-300 z-10 lg:hidden"
+    >
+      <a
+        class="mobile-link text-on-surface font-bold hover:bg-secondary-fixed transition-colors duration-200 p-2 text-center border-b-[4px] border-transparent hover:border-on-surface"
+        href="/#home">Home</a
+      >
+      <a
+        class="mobile-link text-on-surface font-bold hover:bg-secondary-fixed transition-colors duration-200 p-2 text-center border-b-[4px] border-transparent hover:border-on-surface"
+        href="/#about">About</a
+      >
+      <a
+        class="mobile-link text-on-surface font-bold hover:bg-secondary-fixed transition-colors duration-200 p-2 text-center border-b-[4px] border-transparent hover:border-on-surface"
+        href="/#experience">Experience</a
+      >
+      <a
+        class="mobile-link text-on-surface font-bold hover:bg-secondary-fixed transition-colors duration-200 p-2 text-center border-b-[4px] border-transparent hover:border-on-surface"
+        href="/#education">Education</a
+      >
+      <a
+        class="mobile-link text-on-surface font-bold hover:bg-secondary-fixed transition-colors duration-200 p-2 text-center border-b-[4px] border-transparent hover:border-on-surface"
+        href="/#projects">Projects</a
+      >
+      <a
+        class="mobile-link text-on-surface font-bold hover:bg-secondary-fixed transition-colors duration-200 p-2 text-center border-b-[4px] border-transparent hover:border-on-surface"
+        href="/#certificates">Certificates</a
+      >
+      <a
+        class="mobile-link text-on-surface font-bold hover:bg-secondary-fixed transition-colors duration-200 p-2 text-center border-b-[4px] border-transparent hover:border-on-surface"
+        href="/#contact">Contact</a
+      >
     </div>
+  </div>
 </div>
 
 <script>
-    const btn = document.getElementById('mobileMenuBtn');
-    const dropdown = document.getElementById('mobileDropdown');
-    const links = document.querySelectorAll('.mobile-link');
-    
-    let isOpen = false;
-    
-    function toggleMenu() {
-        isOpen = !isOpen;
-        if (isOpen) {
-            dropdown.classList.remove('opacity-0', 'pointer-events-none', 'translate-y-[-20px]');
-            dropdown.classList.add('opacity-100', 'pointer-events-auto', 'translate-y-0');
-        } else {
-            dropdown.classList.remove('opacity-100', 'pointer-events-auto', 'translate-y-0');
-            dropdown.classList.add('opacity-0', 'pointer-events-none', 'translate-y-[-20px]');
-        }
+  const btn = document.getElementById("mobileMenuBtn");
+  const dropdown = document.getElementById("mobileDropdown");
+  const mobileLinks = document.querySelectorAll(".mobile-link");
+  const navLinks = document.querySelectorAll(".nav-link");
+
+  let isOpen = false;
+
+  function toggleMenu() {
+    if (!dropdown) return;
+    isOpen = !isOpen;
+    if (isOpen) {
+      dropdown.classList.remove(
+        "opacity-0",
+        "pointer-events-none",
+        "translate-y-[-20px]",
+      );
+      dropdown.classList.add(
+        "opacity-100",
+        "pointer-events-auto",
+        "translate-y-0",
+      );
+    } else {
+      dropdown.classList.remove(
+        "opacity-100",
+        "pointer-events-auto",
+        "translate-y-0",
+      );
+      dropdown.classList.add(
+        "opacity-0",
+        "pointer-events-none",
+        "translate-y-[-20px]",
+      );
     }
-    
-    if (btn) {
-        btn.addEventListener('click', toggleMenu);
-    }
-    
-    links.forEach(link => {
-        link.addEventListener('click', () => {
-            if (isOpen) toggleMenu();
-        });
+  }
+
+  if (btn) {
+    btn.addEventListener("click", toggleMenu);
+  }
+
+  mobileLinks.forEach((link) => {
+    link.addEventListener("click", () => {
+      if (isOpen) toggleMenu();
     });
+  });
+
+  // Scroll spy functionality
+  const sections = document.querySelectorAll("section[id]");
+
+  const observerOptions = {
+    root: null,
+    rootMargin: "-20% 0px -70% 0px",
+    threshold: 0,
+  };
+
+  const sectionObserver = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        const id = entry.target.getAttribute("id");
+
+        // Update desktop nav links
+        navLinks.forEach((link) => {
+          const targetId = link.getAttribute("data-target");
+          if (targetId === id) {
+            link.classList.add("text-primary", "underline", "decoration-[4px]");
+            link.classList.remove("text-on-surface");
+          } else {
+            link.classList.remove(
+              "text-primary",
+              "underline",
+              "decoration-[4px]",
+            );
+            link.classList.add("text-on-surface");
+          }
+        });
+      }
+    });
+  }, observerOptions);
+
+  sections.forEach((section) => {
+    sectionObserver.observe(section);
+  });
 </script>

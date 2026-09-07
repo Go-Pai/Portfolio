@@ -83,7 +83,7 @@
   --text-headline-lg-mobile--font-weight: 700;
 
   --text-label-caps: 12px;
-  --text-label-caps--line-height: 1.0;
+  --text-label-caps--line-height: 1;
   --text-label-caps--letter-spacing: 0.1em;
   --text-label-caps--font-weight: 700;
 
@@ -101,143 +101,157 @@
 }
 
 @layer components {
-    /* Blueprint Grid Background */
-    .blueprint-bg {
-        background-color: var(--color-surface-container-lowest);
-        background-image: 
-            linear-gradient(var(--color-primary-fixed) 1px, transparent 1px),
-            linear-gradient(90deg, var(--color-primary-fixed) 1px, transparent 1px);
-        background-size: 24px 24px;
-    }
+  /* Blueprint Grid Background */
+  .blueprint-bg {
+    background-color: var(--color-surface-container-lowest);
+    background-image:
+      linear-gradient(var(--color-primary-fixed) 1px, transparent 1px),
+      linear-gradient(90deg, var(--color-primary-fixed) 1px, transparent 1px);
+    background-size: 24px 24px;
+  }
 
-    /* Tape Sticker Effect */
-    .tape-tl {
-        position: absolute;
-        top: -12px;
-        left: -20px;
-        width: 60px;
-        height: 24px;
-        background-color: var(--color-secondary);
-        opacity: 0.8;
-        transform: rotate(-15deg);
-        z-index: 10;
-        border: 2px solid var(--color-on-surface);
-    }
-    
-    .tape-br {
-        position: absolute;
-        bottom: -16px;
-        right: -24px;
-        width: 70px;
-        height: 24px;
-        background-color: var(--color-primary-container);
-        opacity: 0.8;
-        transform: rotate(-10deg);
-        z-index: 10;
-        border: 2px solid var(--color-on-surface);
-    }
+  /* Tape Sticker Effect */
+  .tape-tl {
+    position: absolute;
+    top: -12px;
+    left: -20px;
+    width: 60px;
+    height: 24px;
+    background-color: var(--color-secondary);
+    opacity: 0.8;
+    transform: rotate(-15deg);
+    z-index: 10;
+    border: 2px solid var(--color-on-surface);
+  }
 
-    /* Neobrutalism Button Hover */
-    .btn-neo {
-        transition: transform 0.1s ease, box-shadow 0.1s ease;
-    }
-    .btn-neo:active {
-        transform: translate(4px, 4px);
-        box-shadow: none !important;
-    }
+  .tape-br {
+    position: absolute;
+    bottom: -16px;
+    right: -24px;
+    width: 70px;
+    height: 24px;
+    background-color: var(--color-primary-container);
+    opacity: 0.8;
+    transform: rotate(-10deg);
+    z-index: 10;
+    border: 2px solid var(--color-on-surface);
+  }
 
-    /* Neobrutalism Utilities */
-    .neo-border {
-        border: var(--spacing-border-width) solid var(--color-on-surface);
-    }
-    
-    .neo-shadow {
-        box-shadow: var(--spacing-shadow-offset) var(--spacing-shadow-offset) 0px 0px var(--color-on-surface);
-    }
+  /* Neobrutalism Button Hover */
+  .btn-neo {
+    transition:
+      transform 0.1s ease,
+      box-shadow 0.1s ease;
+  }
+  .btn-neo:active {
+    transform: translate(4px, 4px);
+    box-shadow: none !important;
+  }
 
-    .neo-shadow-hover:hover {
-        transform: translate(4px, 4px);
-        box-shadow: 4px 4px 0px 0px var(--color-on-surface);
-    }
+  /* Neobrutalism Utilities */
+  .neo-border {
+    border: var(--spacing-border-width) solid var(--color-on-surface);
+  }
 
-    .neo-shadow-active:active {
-        transform: translate(8px, 8px);
-        box-shadow: 0px 0px 0px 0px var(--color-on-surface);
-    }
+  .neo-shadow {
+    box-shadow: var(--spacing-shadow-offset) var(--spacing-shadow-offset) 0px
+      0px var(--color-on-surface);
+  }
 
-    /* Drafting Box Component */
-    .drafting-box {
-        position: relative;
-        background-color: var(--color-surface-container-lowest);
-    }
-    .drafting-box::before, .drafting-box::after {
-        content: '';
-        position: absolute;
-        width: 16px;
-        height: 16px;
-        border: 2px solid var(--color-on-surface);
-        pointer-events: none;
-    }
-    .drafting-box::before {
-        top: -8px;
-        left: -8px;
-        border-right: none;
-        border-bottom: none;
-    }
-    .drafting-box::after {
-        bottom: -8px;
-        right: -8px;
-        border-left: none;
-        border-top: none;
-    }
+  .neo-shadow-hover:hover {
+    transform: translate(4px, 4px);
+    box-shadow: 4px 4px 0px 0px var(--color-on-surface);
+  }
 
-    /* Neobrutalism Interactions */
-    .neo-interactive {
-        transition: transform 0.1s ease, box-shadow 0.1s ease;
-    }
-    
-    .neo-interactive:active {
-        transform: translate(4px, 4px);
-        box-shadow: 0px 0px 0px 0px rgba(0,0,0,1);
-    }
+  .neo-shadow-active:active {
+    transform: translate(8px, 8px);
+    box-shadow: 0px 0px 0px 0px var(--color-on-surface);
+  }
 
-    /* Marquee Animation */
-    .marquee-container {
-        overflow: hidden;
-        white-space: nowrap;
-        position: relative;
-        display: flex;
-    }
-    
-    .marquee-content {
-        display: flex;
-        animation: marquee 20s linear infinite;
-    }
-    
-    .marquee-content.reverse {
-        animation: marquee-reverse 25s linear infinite;
-    }
-    
-    @keyframes marquee {
-        0% { transform: translateX(0); }
-        100% { transform: translateX(-50%); }
-    }
-    
-    @keyframes marquee-reverse {
-        0% { transform: translateX(-50%); }
-        100% { transform: translateX(0); }
-    }
+  /* Drafting Box Component */
+  .drafting-box {
+    position: relative;
+    background-color: var(--color-surface-container-lowest);
+  }
+  .drafting-box::before,
+  .drafting-box::after {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border: 2px solid var(--color-on-surface);
+    pointer-events: none;
+  }
+  .drafting-box::before {
+    top: -8px;
+    left: -8px;
+    border-right: none;
+    border-bottom: none;
+  }
+  .drafting-box::after {
+    bottom: -8px;
+    right: -8px;
+    border-left: none;
+    border-top: none;
+  }
 
-    .neobrutal-shadow {
-        box-shadow: 8px 8px 0px 0px rgba(0,0,0,1);
+  /* Neobrutalism Interactions */
+  .neo-interactive {
+    transition:
+      transform 0.1s ease,
+      box-shadow 0.1s ease;
+  }
+
+  .neo-interactive:active {
+    transform: translate(4px, 4px);
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 1);
+  }
+
+  /* Marquee Animation */
+  .marquee-container {
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    display: flex;
+  }
+
+  .marquee-content {
+    display: flex;
+    animation: marquee 20s linear infinite;
+  }
+
+  .marquee-content.reverse {
+    animation: marquee-reverse 25s linear infinite;
+  }
+
+  @keyframes marquee {
+    0% {
+      transform: translateX(0);
     }
-    
-    .neobrutal-input-shadow {
-        box-shadow: 4px 4px 0px 0px rgba(0,0,0,1);
+    100% {
+      transform: translateX(-50%);
     }
-    
-    .neobrutal-active:active {
-        transform: translate(4px, 4px);
-        box-shadow: none;
+  }
+
+  @keyframes marquee-reverse {
+    0% {
+      transform: translateX(-50%);
     }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+  .neobrutal-shadow {
+    box-shadow: 8px 8px 0px 0px rgba(0, 0, 0, 1);
+  }
+
+  .neobrutal-input-shadow {
+    box-shadow: 4px 4px 0px 0px rgba(0, 0, 0, 1);
+  }
+
+  .neobrutal-active:active {
+    transform: translate(4px, 4px);
+    box-shadow: none;
+  }
 }

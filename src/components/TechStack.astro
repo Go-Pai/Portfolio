@@ -1,109 +1,187 @@
 ---
 const baseRow1 = [
-  { name: 'HTML5', slug: 'html5' },
-  { name: 'CSS3', slug: 'css' },
-  { name: 'JavaScript', slug: 'javascript' },
-  { name: 'TypeScript', slug: 'typescript' },
+  { name: "HTML5", slug: "html5" },
+  { name: "CSS3", slug: "css" },
+  { name: "JavaScript", slug: "javascript" },
+  { name: "TypeScript", slug: "typescript" },
 ];
 const row1 = Array(4).fill(baseRow1).flat();
 
 const baseRow2 = [
-  { name: 'React', slug: 'react' },
-  { name: 'Next.js', slug: 'nextdotjs' },
-  { name: 'Tailwind', slug: 'tailwindcss' },
-  { name: 'Prisma', slug: 'prisma' },
+  { name: "React", slug: "react" },
+  { name: "Next.js", slug: "nextdotjs" },
+  { name: "Tailwind", slug: "tailwindcss" },
+  { name: "Prisma", slug: "prisma" },
 ];
 const row2 = Array(4).fill(baseRow2).flat();
 
 const baseRow3 = [
-  { name: 'PHP', slug: 'php' },
-  { name: 'MySQL', slug: 'mysql' },
-  { name: 'InfinityFree', slug: 'infinityfree' },
-  { name: 'Astro', slug: 'astro' },
+  { name: "PHP", slug: "php" },
+  { name: "MySQL", slug: "mysql" },
+  { name: "InfinityFree", slug: "infinityfree" },
+  { name: "Astro", slug: "astro" },
 ];
 const row3 = Array(4).fill(baseRow3).flat();
 ---
-<section id="tech-stack" class="flex flex-col justify-center py-margin-desktop gap-margin-desktop overflow-hidden max-w-[100vw]">
-    <div class="px-margin-mobile md:px-margin-desktop max-w-[1280px] mx-auto w-full mb-8">
-        <div class="neobrutalism-border bg-surface-container-lowest p-6 neobrutalism-shadow relative inline-block">
-            <div class="absolute -top-[12px] -left-[12px] w-6 h-6 border-t-[2px] border-l-[2px] border-primary"></div>
-            <div class="absolute -top-[12px] -right-[12px] w-6 h-6 border-t-[2px] border-r-[2px] border-primary"></div>
-            <div class="absolute -bottom-[12px] -left-[12px] w-6 h-6 border-b-[2px] border-l-[2px] border-primary"></div>
-            <div class="absolute -bottom-[12px] -right-[12px] w-6 h-6 border-b-[2px] border-r-[2px] border-primary"></div>
-            <h1 class="font-display-xl text-display-xl uppercase text-primary">Tech Stack</h1>
-            <p class="font-mono-data text-mono-data mt-2 max-w-xl">SYSTEM_CAPABILITIES // DEPENDENCIES ENUMERATED // DEPLOYMENT READY</p>
-        </div>
+
+<section
+  id="tech-stack"
+  class="flex flex-col justify-center py-margin-desktop gap-margin-desktop overflow-hidden max-w-[100vw]"
+>
+  <div
+    class="px-margin-mobile md:px-margin-desktop max-w-[1280px] mx-auto w-full mb-8"
+  >
+    <div
+      class="neobrutalism-border bg-surface-container-lowest p-6 neobrutalism-shadow relative inline-block"
+    >
+      <div
+        class="absolute -top-[12px] -left-[12px] w-6 h-6 border-t-[2px] border-l-[2px] border-primary"
+      >
+      </div>
+      <div
+        class="absolute -top-[12px] -right-[12px] w-6 h-6 border-t-[2px] border-r-[2px] border-primary"
+      >
+      </div>
+      <div
+        class="absolute -bottom-[12px] -left-[12px] w-6 h-6 border-b-[2px] border-l-[2px] border-primary"
+      >
+      </div>
+      <div
+        class="absolute -bottom-[12px] -right-[12px] w-6 h-6 border-b-[2px] border-r-[2px] border-primary"
+      >
+      </div>
+      <h1 class="font-display-xl text-display-xl uppercase text-primary">
+        Tech Stack
+      </h1>
+      <p class="font-mono-data text-mono-data mt-2 max-w-xl">
+        SYSTEM_CAPABILITIES // DEPENDENCIES ENUMERATED // DEPLOYMENT READY
+      </p>
     </div>
-    
-    <!-- Marquee Row 1 -->
-    <div class="marquee-container w-full h-[140px] bg-primary border-y-[4px] border-on-surface flex items-center">
-        <div class="marquee-content gap-8 px-4">
-            <!-- First Set -->
-            <div class="flex gap-8 items-center">
-                {row1.map(tech => (
-                    <div class="neobrutalism-border bg-surface-container-lowest h-[100px] min-w-[140px] px-4 flex flex-col items-center justify-center text-on-surface neobrutalism-shadow gap-2 transition-transform hover:-translate-y-1">
-                        <img src={`https://cdn.simpleicons.org/${tech.slug}`} alt={tech.name} class="w-8 h-8" />
-                        <span class="font-label-caps text-label-caps uppercase font-bold text-center">{tech.name}</span>
-                    </div>
-                ))}
+  </div>
+
+  <!-- Marquee Row 1 -->
+  <div
+    class="marquee-container w-full h-[140px] bg-primary border-y-[4px] border-on-surface flex items-center"
+  >
+    <div class="marquee-content gap-8 px-4">
+      <!-- First Set -->
+      <div class="flex gap-8 items-center">
+        {
+          row1.map((tech) => (
+            <div class="neobrutalism-border bg-surface-container-lowest h-[100px] min-w-[140px] px-4 flex flex-col items-center justify-center text-on-surface neobrutalism-shadow gap-2 transition-transform hover:-translate-y-1">
+              <img
+                src={`https://cdn.simpleicons.org/${tech.slug}`}
+                alt={tech.name}
+                class="w-8 h-8"
+              />
+              <span class="font-label-caps text-label-caps uppercase font-bold text-center">
+                {tech.name}
+              </span>
             </div>
-            <!-- Duplicate Set for seamless loop -->
-            <div class="flex gap-8 items-center">
-                {row1.map(tech => (
-                    <div class="neobrutalism-border bg-surface-container-lowest h-[100px] min-w-[140px] px-4 flex flex-col items-center justify-center text-on-surface neobrutalism-shadow gap-2 transition-transform hover:-translate-y-1">
-                        <img src={`https://cdn.simpleicons.org/${tech.slug}`} alt={tech.name} class="w-8 h-8" />
-                        <span class="font-label-caps text-label-caps uppercase font-bold text-center">{tech.name}</span>
-                    </div>
-                ))}
+          ))
+        }
+      </div>
+      <!-- Duplicate Set for seamless loop -->
+      <div class="flex gap-8 items-center">
+        {
+          row1.map((tech) => (
+            <div class="neobrutalism-border bg-surface-container-lowest h-[100px] min-w-[140px] px-4 flex flex-col items-center justify-center text-on-surface neobrutalism-shadow gap-2 transition-transform hover:-translate-y-1">
+              <img
+                src={`https://cdn.simpleicons.org/${tech.slug}`}
+                alt={tech.name}
+                class="w-8 h-8"
+              />
+              <span class="font-label-caps text-label-caps uppercase font-bold text-center">
+                {tech.name}
+              </span>
             </div>
-        </div>
+          ))
+        }
+      </div>
     </div>
-    
-    <!-- Marquee Row 2 (Reverse) -->
-    <div class="marquee-container w-full h-[140px] bg-surface-container-lowest border-y-[4px] border-on-surface flex items-center mt-[-4px]">
-        <div class="marquee-content reverse gap-8 px-4">
-            <!-- First Set -->
-            <div class="flex gap-8 items-center">
-                {row2.map(tech => (
-                    <div class="neobrutalism-border bg-secondary-fixed h-[100px] min-w-[140px] px-4 flex flex-col items-center justify-center text-on-surface neobrutalism-shadow gap-2 transition-transform hover:-translate-y-1">
-                        <img src={`https://cdn.simpleicons.org/${tech.slug}`} alt={tech.name} class="w-8 h-8" />
-                        <span class="font-label-caps text-label-caps uppercase font-bold text-center">{tech.name}</span>
-                    </div>
-                ))}
+  </div>
+
+  <!-- Marquee Row 2 (Reverse) -->
+  <div
+    class="marquee-container w-full h-[140px] bg-surface-container-lowest border-y-[4px] border-on-surface flex items-center mt-[-4px]"
+  >
+    <div class="marquee-content reverse gap-8 px-4">
+      <!-- First Set -->
+      <div class="flex gap-8 items-center">
+        {
+          row2.map((tech) => (
+            <div class="neobrutalism-border bg-secondary-fixed h-[100px] min-w-[140px] px-4 flex flex-col items-center justify-center text-on-surface neobrutalism-shadow gap-2 transition-transform hover:-translate-y-1">
+              <img
+                src={`https://cdn.simpleicons.org/${tech.slug}`}
+                alt={tech.name}
+                class="w-8 h-8"
+              />
+              <span class="font-label-caps text-label-caps uppercase font-bold text-center">
+                {tech.name}
+              </span>
             </div>
-            <!-- Duplicate Set for seamless loop -->
-            <div class="flex gap-8 items-center">
-                {row2.map(tech => (
-                    <div class="neobrutalism-border bg-secondary-fixed h-[100px] min-w-[140px] px-4 flex flex-col items-center justify-center text-on-surface neobrutalism-shadow gap-2 transition-transform hover:-translate-y-1">
-                        <img src={`https://cdn.simpleicons.org/${tech.slug}/1a1c1c`} alt={tech.name} class="w-8 h-8" />
-                        <span class="font-label-caps text-label-caps uppercase font-bold text-center">{tech.name}</span>
-                    </div>
-                ))}
+          ))
+        }
+      </div>
+      <!-- Duplicate Set for seamless loop -->
+      <div class="flex gap-8 items-center">
+        {
+          row2.map((tech) => (
+            <div class="neobrutalism-border bg-secondary-fixed h-[100px] min-w-[140px] px-4 flex flex-col items-center justify-center text-on-surface neobrutalism-shadow gap-2 transition-transform hover:-translate-y-1">
+              <img
+                src={`https://cdn.simpleicons.org/${tech.slug}/1a1c1c`}
+                alt={tech.name}
+                class="w-8 h-8"
+              />
+              <span class="font-label-caps text-label-caps uppercase font-bold text-center">
+                {tech.name}
+              </span>
             </div>
-        </div>
+          ))
+        }
+      </div>
     </div>
-    
-    <!-- Marquee Row 3 -->
-    <div class="marquee-container w-full h-[140px] bg-secondary-fixed border-y-[4px] border-on-surface flex items-center mt-[-4px]">
-        <div class="marquee-content gap-8 px-4" style="animation-duration: 18s;">
-            <!-- First Set -->
-            <div class="flex gap-8 items-center">
-                {row3.map(tech => (
-                    <div class="neobrutalism-border bg-surface-container-lowest h-[100px] min-w-[140px] px-4 flex flex-col items-center justify-center text-on-surface neobrutalism-shadow gap-2 transition-transform hover:-translate-y-1">
-                        <img src={`https://cdn.simpleicons.org/${tech.slug}/1a1c1c`} alt={tech.name} class="w-8 h-8" />
-                        <span class="font-label-caps text-label-caps uppercase font-bold text-center">{tech.name}</span>
-                    </div>
-                ))}
+  </div>
+
+  <!-- Marquee Row 3 -->
+  <div
+    class="marquee-container w-full h-[140px] bg-secondary-fixed border-y-[4px] border-on-surface flex items-center mt-[-4px]"
+  >
+    <div class="marquee-content gap-8 px-4" style="animation-duration: 18s;">
+      <!-- First Set -->
+      <div class="flex gap-8 items-center">
+        {
+          row3.map((tech) => (
+            <div class="neobrutalism-border bg-surface-container-lowest h-[100px] min-w-[140px] px-4 flex flex-col items-center justify-center text-on-surface neobrutalism-shadow gap-2 transition-transform hover:-translate-y-1">
+              <img
+                src={`https://cdn.simpleicons.org/${tech.slug}/1a1c1c`}
+                alt={tech.name}
+                class="w-8 h-8"
+              />
+              <span class="font-label-caps text-label-caps uppercase font-bold text-center">
+                {tech.name}
+              </span>
             </div>
-            <!-- Duplicate Set for seamless loop -->
-            <div class="flex gap-8 items-center">
-                {row3.map(tech => (
-                    <div class="neobrutalism-border bg-surface-container-lowest h-[100px] min-w-[140px] px-4 flex flex-col items-center justify-center text-on-surface neobrutalism-shadow gap-2 transition-transform hover:-translate-y-1">
-                        <img src={`https://cdn.simpleicons.org/${tech.slug}/1a1c1c`} alt={tech.name} class="w-8 h-8" />
-                        <span class="font-label-caps text-label-caps uppercase font-bold text-center">{tech.name}</span>
-                    </div>
-                ))}
+          ))
+        }
+      </div>
+      <!-- Duplicate Set for seamless loop -->
+      <div class="flex gap-8 items-center">
+        {
+          row3.map((tech) => (
+            <div class="neobrutalism-border bg-surface-container-lowest h-[100px] min-w-[140px] px-4 flex flex-col items-center justify-center text-on-surface neobrutalism-shadow gap-2 transition-transform hover:-translate-y-1">
+              <img
+                src={`https://cdn.simpleicons.org/${tech.slug}/1a1c1c`}
+                alt={tech.name}
+                class="w-8 h-8"
+              />
+              <span class="font-label-caps text-label-caps uppercase font-bold text-center">
+                {tech.name}
+              </span>
             </div>
-        </div>
+          ))
+        }
+      </div>
     </div>
+  </div>
 </section>
