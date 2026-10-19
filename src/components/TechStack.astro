@@ -4,24 +4,29 @@ const baseRow1 = [
   { name: "CSS3", slug: "css" },
   { name: "JavaScript", slug: "javascript" },
   { name: "TypeScript", slug: "typescript" },
+  { name: "Vite", slug: "vite" },
 ];
 const row1 = Array(4).fill(baseRow1).flat();
 
 const baseRow2 = [
+  { name: "Vue.js", slug: "vuedotjs" },
+  { name: "Inertia.js", slug: "inertia" },
+  { name: "Tailwind", slug: "tailwindcss" },
+  { name: "DaisyUI", slug: "daisyui" },
   { name: "React", slug: "react" },
   { name: "Next.js", slug: "nextdotjs" },
-  { name: "Tailwind", slug: "tailwindcss" },
-  { name: "Prisma", slug: "prisma" },
 ];
-const row2 = Array(4).fill(baseRow2).flat();
+const row2 = Array(3).fill(baseRow2).flat();
 
 const baseRow3 = [
   { name: "PHP", slug: "php" },
+  { name: "PostgreSQL", slug: "postgresql" },
   { name: "MySQL", slug: "mysql" },
-  { name: "InfinityFree", slug: "infinityfree" },
+  { name: "Prisma", slug: "prisma" },
   { name: "Astro", slug: "astro" },
+  { name: "InfinityFree", slug: "infinityfree" },
 ];
-const row3 = Array(4).fill(baseRow3).flat();
+const row3 = Array(3).fill(baseRow3).flat();
 ---
 
 <section
@@ -129,7 +134,7 @@ const row3 = Array(4).fill(baseRow3).flat();
           row2.map((tech) => (
             <div class="neobrutalism-border bg-secondary-fixed h-[100px] min-w-[140px] px-4 flex flex-col items-center justify-center text-on-surface neobrutalism-shadow gap-2 transition-transform hover:-translate-y-1">
               <img
-                src={`https://cdn.simpleicons.org/${tech.slug}/1a1c1c`}
+                src={`https://cdn.simpleicons.org/${tech.slug}`}
                 alt={tech.name}
                 class="w-8 h-8"
               />
