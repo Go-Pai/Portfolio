@@ -1,15 +1,33 @@
 ---
 import "../styles/global.css";
-const { title = "Portfolio Vay" } = Astro.props;
+const {
+  title = "Vito Adyatma Yoransa | Frontend Developer",
+  description = "Portofolio Vito Adyatma Yoransa - Frontend Developer yang berfokus pada pembangunan antarmuka web modern, responsif, dan interaktif dengan Vue.js, React, Astro, dan Tailwind CSS.",
+  image = "/images/my-photo.png",
+} = Astro.props;
 ---
 
 <!doctype html>
-<html lang="en" class="scroll-smooth">
+<html lang="id" class="scroll-smooth">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{title}</title>
+    <meta name="description" content={description} />
+    <meta name="author" content="Vito Adyatma Yoransa" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+    <!-- Open Graph / Social Media Preview -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={image} />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={image} />
 
     <link href="https://fonts.googleapis.com" rel="preconnect" />
     <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
