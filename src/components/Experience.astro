@@ -33,392 +33,570 @@
     </p>
   </header>
 
-  <!-- Timeline Container -->
-  <div class="relative w-full py-8">
-    <!-- Central Stem -->
+  <!-- Left-Stem Timeline Container -->
+  <div class="relative w-full py-4 pl-8 md:pl-16">
+    <!-- Left Stem Line -->
     <div
-      class="absolute left-[16px] md:left-1/2 top-0 bottom-0 w-[8px] bg-on-surface -translate-x-1/2 z-0"
+      class="absolute left-[12px] md:left-[24px] top-0 bottom-0 w-[6px] md:w-[8px] bg-on-surface z-0"
     >
     </div>
 
-    <!-- Timeline Item 1: Right Side (Desktop) - PT Selamat Jaya Persada -->
-    <div
-      class="relative flex md:justify-end items-center w-full mb-16 pl-12 md:pl-0 z-10 group reveal"
-    >
-      <!-- Stem Connector -->
-      <div
-        class="absolute left-[16px] md:left-1/2 w-8 md:w-16 h-[8px] bg-on-surface md:-translate-x-full"
-      >
-      </div>
+    <!-- Timeline Item 1: PT Selamat Jaya Persada (Dual Sub-Cards: GAIS SJP & Compro SJP) -->
+    <div class="relative mb-12 md:mb-16 group reveal">
       <!-- Node Marker -->
       <div
-        class="absolute left-[16px] md:left-1/2 w-6 h-6 bg-primary border-[4px] border-on-surface rounded-none -translate-x-1/2 -translate-y-1/2 top-1/2 z-20 group-hover:bg-secondary-fixed transition-colors"
+        class="absolute -left-[26px] md:-left-[47px] top-6 w-5 h-5 md:w-6 md:h-6 bg-primary border-[3px] md:border-[4px] border-on-surface rounded-none -translate-x-1/2 z-20 group-hover:bg-secondary-fixed transition-colors shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]"
+      >
+      </div>
+      <!-- Stem Connector -->
+      <div
+        class="absolute -left-[20px] md:-left-[40px] top-[30px] md:top-[32px] w-[20px] md:w-[40px] h-[4px] md:h-[6px] bg-on-surface z-10"
       >
       </div>
 
+      <!-- Main Container Card -->
       <div
-        class="w-full md:w-[calc(50%-48px)] bg-surface-container-lowest border-[4px] border-on-surface shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] neo-interactive cursor-default hover:bg-surface-bright"
+        class="w-full bg-surface-container-lowest border-[4px] border-on-surface shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] neo-interactive cursor-default"
       >
-        <div class="border-b-[4px] border-on-surface p-4 bg-primary-fixed">
+        <!-- Master Card Header -->
+        <div class="border-b-[4px] border-on-surface p-4 md:p-6 bg-primary-fixed">
           <div class="flex justify-between items-start flex-wrap gap-2">
-            <h3
-              class="font-headline-md text-headline-md font-bold text-on-surface uppercase"
-            >
-              Frontend Developer
-            </h3>
-            <span
-              class="font-label-caps text-label-caps bg-on-surface text-surface-container-lowest px-2 py-1"
-              >OKT 2024 - PRESENT</span
-            >
+            <div>
+              <span
+                class="font-label-caps text-label-caps uppercase bg-on-surface text-surface-container-lowest px-2 py-0.5 mb-2 inline-block font-bold"
+              >
+                INTERNSHIP / CORE WORK
+              </span>
+              <h3
+                class="font-headline-md text-headline-md font-bold text-on-surface uppercase"
+              >
+                Fullstack Web Developer
+              </h3>
+              <h4
+                class="font-body-lg text-body-lg text-on-surface-variant font-bold flex items-center gap-2 mt-1"
+              >
+                <span class="material-symbols-outlined text-base">domain</span>
+                PT Selamat Jaya Persada (Bengkulu)
+              </h4>
+            </div>
+            <div class="flex flex-col items-end gap-1">
+              <span
+                class="font-label-caps text-label-caps bg-on-surface text-surface-container-lowest px-3 py-1 font-bold"
+              >
+                OKT 2024 - PRESENT
+              </span>
+              <span
+                class="text-xs font-mono-data bg-secondary-fixed text-on-surface px-2 py-0.5 border-[2px] border-on-surface font-bold"
+              >
+                TOP CONTRIBUTOR (240+ COMMITS)
+              </span>
+            </div>
           </div>
-          <h4 class="font-body-lg text-body-lg text-on-surface-variant mt-2 font-bold">
-            PT Selamat Jaya Persada (Bengkulu)
-          </h4>
         </div>
-        <div class="p-4 bg-surface-container-lowest">
-          <ul class="space-y-3">
-            <li
-              class="font-body-md text-body-md text-on-surface flex items-start border-b-[4px] border-on-surface pb-2 border-opacity-20 hover:bg-secondary-fixed transition-colors"
+
+        <!-- Master Card Body: 2 Sub-Cards Side-by-Side (Desktop) -->
+        <div class="p-4 md:p-6 bg-surface-container-lowest">
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+            <!-- Sub-Card A: GAIS SJP (Enterprise Asset Management) -->
+            <div
+              class="border-[3px] border-on-surface bg-surface-container-low p-4 md:p-5 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] flex flex-col justify-between h-full"
             >
+              <div>
+                <div class="flex items-center justify-between gap-2 border-b-[3px] border-on-surface pb-3 mb-4">
+                  <div class="flex items-center gap-2">
+                    <span
+                      class="material-symbols-outlined text-primary-dark font-bold text-xl"
+                    >
+                      inventory_2
+                    </span>
+                    <h5 class="font-headline-md text-lg md:text-xl font-bold uppercase text-on-surface">
+                      GAIS SJP
+                    </h5>
+                  </div>
+                  <span
+                    class="font-label-caps text-xs bg-surface-container-high text-on-surface border-[2px] border-on-surface px-2 py-0.5 font-bold uppercase flex items-center gap-1"
+                  >
+                    <span class="material-symbols-outlined text-xs">lock</span> Internal ERP
+                  </span>
+                </div>
+
+                <p class="font-body-md text-sm text-on-surface-variant mb-4 font-medium italic">
+                  General Affair Information System — Sistem terpadu manajemen siklus hidup dan inventaris aset korporat.
+                </p>
+
+                <ul class="space-y-2.5 mb-6">
+                  <li class="font-body-md text-sm text-on-surface flex items-start">
+                    <span class="material-symbols-outlined mr-2 shrink-0 text-xs mt-1" style="font-variation-settings: 'FILL' 1;" data-icon="square">square</span>
+                    <span>Mengembangkan sistem internal secara fullstack berbasis <strong>Laravel</strong>, <strong>Inertia.js</strong>, dan <strong>Vue 3</strong>.</span>
+                  </li>
+                  <li class="font-body-md text-sm text-on-surface flex items-start">
+                    <span class="material-symbols-outlined mr-2 shrink-0 text-xs mt-1" style="font-variation-settings: 'FILL' 1;" data-icon="square">square</span>
+                    <span>Membangun <strong>DashboardController</strong> dan query agregasi database PostgreSQL untuk kalkulasi status & analitik aset realtime.</span>
+                  </li>
+                  <li class="font-body-md text-sm text-on-surface flex items-start">
+                    <span class="material-symbols-outlined mr-2 shrink-0 text-xs mt-1" style="font-variation-settings: 'FILL' 1;" data-icon="square">square</span>
+                    <span>Menulis automated testing (<strong>Laravel Feature Tests / Pest</strong>) pada modul Dashboard, Peminjaman, dan Pemeliharaan.</span>
+                  </li>
+                  <li class="font-body-md text-sm text-on-surface flex items-start">
+                    <span class="material-symbols-outlined mr-2 shrink-0 text-xs mt-1" style="font-variation-settings: 'FILL' 1;" data-icon="square">square</span>
+                    <span>Mengoptimasi controller query logic, smart priority sorting, dan sanitasi data pada 9 modul controller.</span>
+                  </li>
+                  <li class="font-body-md text-sm text-on-surface flex items-start">
+                    <span class="material-symbols-outlined mr-2 shrink-0 text-xs mt-1" style="font-variation-settings: 'FILL' 1;" data-icon="square">square</span>
+                    <span>Membangun modul scanner kamera QR Code dan cetak label barcode aset yang responsif di desktop & mobile.</span>
+                  </li>
+                  <li class="font-body-md text-sm text-on-surface flex items-start">
+                    <span class="material-symbols-outlined mr-2 shrink-0 text-xs mt-1" style="font-variation-settings: 'FILL' 1;" data-icon="square">square</span>
+                    <span>Menjalankan environment development dan database PostgreSQL secara terisolasi menggunakan kontainer <strong>Docker</strong>.</span>
+                  </li>
+                  <li class="font-body-md text-sm text-on-surface flex items-start">
+                    <span class="material-symbols-outlined mr-2 shrink-0 text-xs mt-1" style="font-variation-settings: 'FILL' 1;" data-icon="square">square</span>
+                    <span>Memimpin integrasi FE-BE melalui <strong>30+ Pull Request (PR) merged</strong> di repositori tim.</span>
+                  </li>
+                </ul>
+              </div>
+
+              <div>
+                <div class="flex flex-wrap gap-1.5 mb-4 pt-3 border-t-[2px] border-on-surface border-opacity-30">
+                  <span class="font-label-caps text-xs bg-primary text-on-primary border-[2px] border-on-surface px-2 py-0.5">Laravel</span>
+                  <span class="font-label-caps text-xs bg-primary text-on-primary border-[2px] border-on-surface px-2 py-0.5">Vue.js 3</span>
+                  <span class="font-label-caps text-xs bg-primary text-on-primary border-[2px] border-on-surface px-2 py-0.5">Inertia.js</span>
+                  <span class="font-label-caps text-xs bg-primary text-on-primary border-[2px] border-on-surface px-2 py-0.5">PostgreSQL</span>
+                  <span class="font-label-caps text-xs bg-primary text-on-primary border-[2px] border-on-surface px-2 py-0.5">Docker</span>
+                  <span class="font-label-caps text-xs bg-primary text-on-primary border-[2px] border-on-surface px-2 py-0.5">Pest / PHPUnit</span>
+                  <span class="font-label-caps text-xs bg-primary text-on-primary border-[2px] border-on-surface px-2 py-0.5">TypeScript</span>
+                  <span class="font-label-caps text-xs bg-primary text-on-primary border-[2px] border-on-surface px-2 py-0.5">Tailwind CSS</span>
+                  <span class="font-label-caps text-xs bg-primary text-on-primary border-[2px] border-on-surface px-2 py-0.5">DaisyUI</span>
+                </div>
+                <div class="w-full">
+                  <span
+                    class="w-full inline-flex justify-center items-center gap-2 bg-surface-container-high text-on-surface border-[2px] border-on-surface shadow-[3px_3px_0px_0px_rgba(0,0,0,1)] px-4 py-2 font-bold uppercase text-xs cursor-default select-none"
+                  >
+                    <span class="material-symbols-outlined text-sm">lock</span> Sistem Internal Perusahaan (Restricted)
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Sub-Card B: SJP Company Profile (Holding & 8 Subsidiaries) -->
+            <div
+              class="border-[3px] border-on-surface bg-surface-container-low p-4 md:p-5 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] flex flex-col justify-between h-full"
+            >
+              <div>
+                <div class="flex items-center justify-between gap-2 border-b-[3px] border-on-surface pb-3 mb-4">
+                  <div class="flex items-center gap-2">
+                    <span
+                      class="material-symbols-outlined text-secondary font-bold text-xl"
+                    >
+                      public
+                    </span>
+                    <h5 class="font-headline-md text-lg md:text-xl font-bold uppercase text-on-surface">
+                      SJP Holding Compro
+                    </h5>
+                  </div>
+                  <span
+                    class="font-label-caps text-xs bg-secondary-fixed text-on-surface border-[2px] border-on-surface px-2 py-0.5 font-bold uppercase flex items-center gap-1"
+                  >
+                    <span class="material-symbols-outlined text-xs">public</span> Public CMS
+                  </span>
+                </div>
+
+                <p class="font-body-md text-sm text-on-surface-variant mb-4 font-medium italic">
+                  Portal resmi Company Profile holding PT Selamat Jaya Persada beserta 8 entitas anak usahanya.
+                </p>
+
+                <ul class="space-y-2.5 mb-6">
+                  <li class="font-body-md text-sm text-on-surface flex items-start">
+                    <span class="material-symbols-outlined mr-2 shrink-0 text-xs mt-1" style="font-variation-settings: 'FILL' 1;" data-icon="square">square</span>
+                    <span>Membangun website resmi holding korporat dan 8 lini bisnis anak usaha dalam satu payung identitas digital.</span>
+                  </li>
+                  <li class="font-body-md text-sm text-on-surface flex items-start">
+                    <span class="material-symbols-outlined mr-2 shrink-0 text-xs mt-1" style="font-variation-settings: 'FILL' 1;" data-icon="square">square</span>
+                    <span>Mengembangkan <strong>Custom WordPress Child Theme</strong> dengan modularitas komponen dan layout dinamis.</span>
+                  </li>
+                  <li class="font-body-md text-sm text-on-surface flex items-start">
+                    <span class="material-symbols-outlined mr-2 shrink-0 text-xs mt-1" style="font-variation-settings: 'FILL' 1;" data-icon="square">square</span>
+                    <span>Mengimplementasikan virtual routing dan integrasi profil portofolio 8 entitas anak perusahaan.</span>
+                  </li>
+                  <li class="font-body-md text-sm text-on-surface flex items-start">
+                    <span class="material-symbols-outlined mr-2 shrink-0 text-xs mt-1" style="font-variation-settings: 'FILL' 1;" data-icon="square">square</span>
+                    <span>Menyiapkan arsitektur deployment menggunakan kontainer <strong>Docker</strong> untuk stabilitas dan portabilitas server.</span>
+                  </li>
+                </ul>
+              </div>
+
+              <div>
+                <div class="flex flex-wrap gap-1.5 mb-4 pt-3 border-t-[2px] border-on-surface border-opacity-30">
+                  <span class="font-label-caps text-xs bg-secondary text-on-secondary border-[2px] border-on-surface px-2 py-0.5">WordPress</span>
+                  <span class="font-label-caps text-xs bg-secondary text-on-secondary border-[2px] border-on-surface px-2 py-0.5">Docker</span>
+                  <span class="font-label-caps text-xs bg-secondary text-on-secondary border-[2px] border-on-surface px-2 py-0.5">PHP</span>
+                  <span class="font-label-caps text-xs bg-secondary text-on-secondary border-[2px] border-on-surface px-2 py-0.5">Tailwind CSS</span>
+                </div>
+                <div class="w-full">
+                  <a
+                    href="https://profile.absenkusjp.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="w-full inline-flex justify-center items-center gap-2 bg-secondary text-on-secondary border-[2px] border-on-surface shadow-[3px_3px_0px_0px_rgba(0,0,0,1)] px-4 py-2 font-bold no-underline hover:bg-secondary-fixed hover:text-on-surface transition-colors uppercase text-xs"
+                  >
+                    <span class="material-symbols-outlined text-sm">open_in_new</span> Kunjungi Live Compro SJP
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Timeline Item 2: SF.CREATIVA (Client / Creative Space Landing Page) -->
+    <div
+      class="relative mb-12 md:mb-16 group reveal"
+      style="transition-delay: 100ms;"
+    >
+      <!-- Node Marker -->
+      <div
+        class="absolute -left-[26px] md:-left-[47px] top-6 w-5 h-5 md:w-6 md:h-6 bg-secondary border-[3px] md:border-[4px] border-on-surface rounded-none -translate-x-1/2 z-20 group-hover:bg-primary transition-colors shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]"
+      >
+      </div>
+      <!-- Stem Connector -->
+      <div
+        class="absolute -left-[20px] md:-left-[40px] top-[30px] md:top-[32px] w-[20px] md:w-[40px] h-[4px] md:h-[6px] bg-on-surface z-10"
+      >
+      </div>
+
+      <!-- Main Container Card -->
+      <div
+        class="w-full bg-surface-container-lowest border-[4px] border-on-surface shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] neo-interactive cursor-default"
+      >
+        <div class="border-b-[4px] border-on-surface p-4 md:p-6 bg-secondary-fixed">
+          <div class="flex justify-between items-start flex-wrap gap-2">
+            <div>
               <span
-                class="material-symbols-outlined mr-2 shrink-0 fill"
-                style="font-variation-settings: 'FILL' 1;"
-                data-icon="square">square</span
+                class="font-label-caps text-label-caps uppercase bg-on-surface text-surface-container-lowest px-2 py-0.5 mb-2 inline-block font-bold"
               >
-              Mengembangkan antarmuka frontend GAIS SJP (General Affair Information System) berbasis Vue 3 & Inertia.js untuk manajemen inventaris dan aset korporat.
+                FREELANCE / CLIENT WORK
+              </span>
+              <h3
+                class="font-headline-md text-headline-md font-bold text-on-surface uppercase"
+              >
+                Frontend Developer & UI Engineer
+              </h3>
+              <h4
+                class="font-body-lg text-body-lg text-on-surface-variant font-bold flex items-center gap-2 mt-1"
+              >
+                <span class="material-symbols-outlined text-base">storefront</span>
+                SF.CREATIVA (Creative Space & Cafe)
+              </h4>
+            </div>
+            <div class="flex flex-col items-end gap-1">
+              <span
+                class="font-label-caps text-label-caps bg-on-surface text-surface-container-lowest px-3 py-1 font-bold"
+              >
+                NOV 2026
+              </span>
+              <span
+                class="text-xs font-mono-data bg-tertiary text-on-tertiary px-2 py-0.5 border-[2px] border-on-surface font-bold"
+              >
+                DARK BRUTALISM & PUNK ZINE
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <div class="p-4 md:p-6 bg-surface-container-lowest">
+          <p class="font-body-md text-sm md:text-base text-on-surface-variant mb-4 italic">
+            Landing page modern performa tinggi untuk creative space & cafe SF.CREATIVA dengan estetika dark brutalism, film grain texture, dan tipografi editorial bertenaga.
+          </p>
+
+          <ul class="space-y-3 mb-6">
+            <li class="font-body-md text-body-md text-on-surface flex items-start border-b-[2px] border-on-surface border-opacity-15 pb-2">
+              <span class="material-symbols-outlined mr-2 shrink-0 fill text-sm mt-0.5" style="font-variation-settings: 'FILL' 1;" data-icon="square">square</span>
+              <span>Merancang dan membangun landing page berkinerja tinggi menggunakan <strong>Astro</strong> dan <strong>Tailwind CSS</strong> dengan skor performa dan SEO maksimal.</span>
             </li>
-            <li
-              class="font-body-md text-body-md text-on-surface flex items-start border-b-[4px] border-on-surface pb-2 border-opacity-20 hover:bg-secondary-fixed transition-colors"
-            >
-              <span
-                class="material-symbols-outlined mr-2 shrink-0 fill"
-                style="font-variation-settings: 'FILL' 1;"
-                data-icon="square">square</span
-              >
-              Mengintegrasikan puluhan endpoint REST API dengan frontend, serta berkontribusi aktif melalui 30+ Pull Request (PR) merged pada repositori tim.
+            <li class="font-body-md text-body-md text-on-surface flex items-start border-b-[2px] border-on-surface border-opacity-15 pb-2">
+              <span class="material-symbols-outlined mr-2 shrink-0 fill text-sm mt-0.5" style="font-variation-settings: 'FILL' 1;" data-icon="square">square</span>
+              <span>Menerapkan konsep desain <em>Dark Brutalism + Punk Zine Editorial</em>: palet monokromatik kontras tinggi dengan aksen merah menyala, tekstur overlay film grain, serta tipografi Anton & Space Mono.</span>
             </li>
-            <li
-              class="font-body-md text-body-md text-on-surface flex items-start border-b-[4px] border-on-surface pb-2 border-opacity-20 hover:bg-secondary-fixed transition-colors"
-            >
-              <span
-                class="material-symbols-outlined mr-2 shrink-0 fill"
-                style="font-variation-settings: 'FILL' 1;"
-                data-icon="square">square</span
-              >
-              Membangun modul pemindaian (scan) dan cetak label QR Code aset secara langsung untuk mempercepat pencatatan dan monitoring di lapangan.
+            <li class="font-body-md text-body-md text-on-surface flex items-start border-b-[2px] border-on-surface border-opacity-15 pb-2">
+              <span class="material-symbols-outlined mr-2 shrink-0 fill text-sm mt-0.5" style="font-variation-settings: 'FILL' 1;" data-icon="square">square</span>
+              <span>Mengembangkan sistem UI interaktif: filter kategori menu dinamis ("Fuel & Brew"), asymmetric bento gallery ("The Scene"), dan indikator jam operasional toko otomatis real-time (WIB).</span>
             </li>
-            <li
-              class="font-body-md text-body-md text-on-surface flex items-start border-b-[4px] border-on-surface pb-2 border-opacity-20 hover:bg-secondary-fixed transition-colors"
-            >
-              <span
-                class="material-symbols-outlined mr-2 shrink-0 fill"
-                style="font-variation-settings: 'FILL' 1;"
-                data-icon="square">square</span
-              >
-              Mendesain antarmuka responsif (desktop & mobile) dengan Tailwind CSS dan DaisyUI serta menyelaraskan tema antarmuka pengguna.
-            </li>
-            <li
-              class="font-body-md text-body-md text-on-surface flex items-start border-b-[4px] border-on-surface pb-2 border-opacity-20 hover:bg-secondary-fixed transition-colors"
-            >
-              <span
-                class="material-symbols-outlined mr-2 shrink-0 fill"
-                style="font-variation-settings: 'FILL' 1;"
-                data-icon="square">square</span
-              >
-              Membangun website resmi Company Profile holding PT Selamat Jaya Persada & 8 entitas anak usahanya berbasis WordPress (Custom Child Theme) dan Docker.
+            <li class="font-body-md text-body-md text-on-surface flex items-start">
+              <span class="material-symbols-outlined mr-2 shrink-0 fill text-sm mt-0.5" style="font-variation-settings: 'FILL' 1;" data-icon="square">square</span>
+              <span>Menciptakan animasi visual halus: filter foto transisi grayscale ke full color saat hover, stiker SVG starburst punk zine, serta infinite marquee text running separator dengan pure CSS.</span>
             </li>
           </ul>
-          <div class="mt-4 flex flex-wrap items-center gap-3">
+
+          <div class="flex flex-wrap items-center justify-between gap-4 pt-4 border-t-[3px] border-on-surface">
+            <div class="flex flex-wrap gap-2">
+              <span class="font-label-caps text-xs bg-primary text-on-primary border-[2px] border-on-surface px-2 py-1">Astro</span>
+              <span class="font-label-caps text-xs bg-primary text-on-primary border-[2px] border-on-surface px-2 py-1">Tailwind CSS</span>
+              <span class="font-label-caps text-xs bg-primary text-on-primary border-[2px] border-on-surface px-2 py-1">TypeScript</span>
+              <span class="font-label-caps text-xs bg-primary text-on-primary border-[2px] border-on-surface px-2 py-1">Dark Brutalism</span>
+              <span class="font-label-caps text-xs bg-primary text-on-primary border-[2px] border-on-surface px-2 py-1">Pure CSS Marquee</span>
+            </div>
+            <div class="flex flex-wrap gap-3">
+              <span
+                class="inline-flex items-center gap-2 bg-surface-container-high text-on-surface border-[2px] border-on-surface shadow-[3px_3px_0px_0px_rgba(0,0,0,1)] px-3 py-2 font-bold uppercase text-xs cursor-default select-none"
+              >
+                <span class="material-symbols-outlined text-sm">lock</span> Private Repo
+              </span>
+              <a
+                href="https://sfcreativa.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="inline-flex items-center gap-2 bg-[#D90429] text-white border-[2px] border-on-surface shadow-[3px_3px_0px_0px_rgba(0,0,0,1)] px-4 py-2 font-bold no-underline hover:bg-[#b00320] transition-colors uppercase text-xs"
+              >
+                <span class="material-symbols-outlined text-sm">open_in_new</span> Live Demo (SF.CREATIVA)
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Timeline Item 3: Sinta 3 Journal Publication -->
+    <div
+      class="relative mb-12 md:mb-16 group reveal"
+      style="transition-delay: 200ms;"
+    >
+      <!-- Node Marker -->
+      <div
+        class="absolute -left-[26px] md:-left-[47px] top-6 w-5 h-5 md:w-6 md:h-6 bg-[#34d399] border-[3px] md:border-[4px] border-on-surface rounded-none -translate-x-1/2 z-20 group-hover:bg-primary transition-colors shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]"
+      >
+      </div>
+      <!-- Stem Connector -->
+      <div
+        class="absolute -left-[20px] md:-left-[40px] top-[30px] md:top-[32px] w-[20px] md:w-[40px] h-[4px] md:h-[6px] bg-on-surface z-10"
+      >
+      </div>
+
+      <!-- Main Container Card -->
+      <div
+        class="w-full bg-surface-container-lowest border-[4px] border-on-surface shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] neo-interactive cursor-default"
+      >
+        <div class="border-b-[4px] border-on-surface p-4 md:p-6 bg-[#d1fae5]">
+          <div class="flex justify-between items-start flex-wrap gap-2">
+            <div>
+              <span
+                class="font-label-caps text-label-caps uppercase bg-on-surface text-surface-container-lowest px-2 py-0.5 mb-2 inline-block font-bold"
+              >
+                RESEARCH / PUBLICATION
+              </span>
+              <h3
+                class="font-headline-md text-headline-md font-bold text-on-surface uppercase"
+              >
+                Software Engineer & Researcher
+              </h3>
+              <h4
+                class="font-body-lg text-body-lg text-on-surface-variant font-bold flex items-center gap-2 mt-1"
+              >
+                <span class="material-symbols-outlined text-base">menu_book</span>
+                Sinta 3 Journal Publication (Jurnal Algoritma ITG)
+              </h4>
+            </div>
             <span
-              class="inline-flex items-center gap-2 bg-surface-container-high text-on-surface border-[2px] border-on-surface shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] px-4 py-2 font-bold uppercase text-sm cursor-default select-none"
+              class="font-label-caps text-label-caps bg-on-surface text-surface-container-lowest px-3 py-1 font-bold"
             >
-              <span class="material-symbols-outlined text-sm">lock</span> GAIS SJP (Internal System)
+              FINAL PROJECT
             </span>
-            <a
-              href="https://profile.absenkusjp.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="inline-flex items-center gap-2 bg-secondary text-on-secondary border-[2px] border-on-surface shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] px-4 py-2 font-bold no-underline hover:bg-secondary-fixed hover:text-on-surface transition-colors uppercase text-sm"
-            >
-              <span class="material-symbols-outlined text-sm">public</span> Live Compro SJP
-            </a>
-          </div>
-          <div class="mt-6 flex flex-wrap gap-2">
-            <span
-              class="font-label-caps text-label-caps bg-primary text-on-primary border-[2px] border-on-surface px-2 py-1"
-              >Vue.js 3</span
-            >
-            <span
-              class="font-label-caps text-label-caps bg-primary text-on-primary border-[2px] border-on-surface px-2 py-1"
-              >Inertia.js</span
-            >
-            <span
-              class="font-label-caps text-label-caps bg-primary text-on-primary border-[2px] border-on-surface px-2 py-1"
-              >Vite</span
-            >
-            <span
-              class="font-label-caps text-label-caps bg-primary text-on-primary border-[2px] border-on-surface px-2 py-1"
-              >Tailwind CSS</span
-            >
-            <span
-              class="font-label-caps text-label-caps bg-primary text-on-primary border-[2px] border-on-surface px-2 py-1"
-              >DaisyUI</span
-            >
-            <span
-              class="font-label-caps text-label-caps bg-primary text-on-primary border-[2px] border-on-surface px-2 py-1"
-              >TypeScript</span
-            >
-            <span
-              class="font-label-caps text-label-caps bg-primary text-on-primary border-[2px] border-on-surface px-2 py-1"
-              >WordPress</span
-            >
-            <span
-              class="font-label-caps text-label-caps bg-primary text-on-primary border-[2px] border-on-surface px-2 py-1"
-              >Docker</span
-            >
-            <span
-              class="font-label-caps text-label-caps bg-primary text-on-primary border-[2px] border-on-surface px-2 py-1"
-              >PHP</span
-            >
           </div>
         </div>
-      </div>
-    </div>
 
-    <!-- Timeline Item 2: Left Side (Desktop) - Sinta 3 Journal -->
-    <div
-      class="relative flex md:justify-start items-center w-full mb-16 pl-12 md:pl-0 z-10 group reveal"
-      style="transition-delay: 150ms;"
-    >
-      <!-- Stem Connector -->
-      <div
-        class="absolute left-[16px] md:left-[calc(50%+16px)] md:w-16 h-[8px] bg-on-surface hidden md:block"
-      >
-      </div>
-      <div class="absolute left-[16px] w-8 h-[8px] bg-on-surface md:hidden">
-      </div>
-      <!-- Node Marker -->
-      <div
-        class="absolute left-[16px] md:left-1/2 w-6 h-6 bg-surface border-[4px] border-on-surface rounded-none -translate-x-1/2 -translate-y-1/2 top-1/2 z-20 group-hover:bg-secondary-fixed transition-colors"
-      >
-      </div>
-
-      <div
-        class="w-full md:w-[calc(50%-48px)] bg-surface-container-lowest border-[4px] border-on-surface shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] neo-interactive cursor-default hover:bg-surface-bright"
-      >
-        <div
-          class="border-b-[4px] border-on-surface p-4 bg-secondary-fixed"
-        >
-          <div class="flex justify-between items-start flex-wrap gap-2">
-            <h3
-              class="font-headline-md text-headline-md font-bold text-on-surface uppercase"
-            >
-              Software Engineer / Researcher
-            </h3>
-            <span
-              class="font-label-caps text-label-caps bg-on-surface text-surface-container-lowest px-2 py-1"
-              >FINAL PROJECT</span
-            >
-          </div>
-          <h4 class="font-body-lg text-body-lg text-on-surface-variant mt-2 font-bold">
-            Sinta 3 Journal Publication
-          </h4>
-        </div>
-        <div class="p-4 bg-surface-container-lowest">
-          <ul class="space-y-3">
-            <li
-              class="font-body-md text-body-md text-on-surface flex items-start border-b-[4px] border-on-surface pb-2 border-opacity-20 hover:bg-secondary-fixed transition-colors"
-            >
-              <span
-                class="material-symbols-outlined mr-2 shrink-0 fill"
-                style="font-variation-settings: 'FILL' 1;"
-                data-icon="square">square</span
-              >
-              Mengembangkan aplikasi pencarian rute rumah sakit menggunakan Algoritma
-              A* (A-Star) untuk penentuan jalur optimal.
+        <div class="p-4 md:p-6 bg-surface-container-lowest">
+          <ul class="space-y-3 mb-6">
+            <li class="font-body-md text-body-md text-on-surface flex items-start">
+              <span class="material-symbols-outlined mr-2 shrink-0 fill text-sm mt-0.5" style="font-variation-settings: 'FILL' 1;" data-icon="square">square</span>
+              <span>Merancang dan mengembangkan aplikasi web sistem pencarian rute fasilitas rumah sakit berbasis graf menggunakan <strong>Algoritma A* (A-Star)</strong> dan <strong>Valhalla Routing Engine API</strong> untuk kalkulasi jalur tercepat dan penentuan navigasi optimal.</span>
+            </li>
+            <li class="font-body-md text-body-md text-on-surface flex items-start">
+              <span class="material-symbols-outlined mr-2 shrink-0 fill text-sm mt-0.5" style="font-variation-settings: 'FILL' 1;" data-icon="square">square</span>
+              <span>Melakukan visualisasi pemetaan spasial interaktif dengan Leaflet dan OpenStreetMap (OSM) serta mempublikasikan hasil riset ke <strong>Jurnal Terakreditasi Nasional Sinta 3</strong>.</span>
             </li>
           </ul>
-          <div class="mt-4 flex flex-wrap gap-4">
-            <a
-              href="https://go-pai.github.io/rute-rumah-sakit/"
-              target="_blank"
-              class="bg-tertiary text-on-tertiary border-[2px] border-on-surface shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] px-4 py-2 font-bold no-underline hover:bg-secondary-fixed hover:text-on-surface transition-colors uppercase text-sm"
-            >
-              Demo Aplikasi
-            </a>
-            <a
-              href="https://jurnal.itg.ac.id/index.php/algoritma/article/view/2397/1864"
-              target="_blank"
-              class="bg-surface-container-highest text-on-surface border-[2px] border-on-surface shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] px-4 py-2 font-bold no-underline hover:bg-secondary hover:text-on-secondary transition-colors uppercase text-sm"
-            >
-              Baca Jurnal (Sinta 3)
-            </a>
-          </div>
-          <div class="mt-6 flex flex-wrap gap-2">
-            <span
-              class="font-label-caps text-label-caps bg-tertiary text-on-tertiary border-[2px] border-on-surface px-2 py-1"
-              >A* Algorithm</span
-            >
-            <span
-              class="font-label-caps text-label-caps bg-tertiary text-on-tertiary border-[2px] border-on-surface px-2 py-1"
-              >JavaScript</span
-            >
-            <span
-              class="font-label-caps text-label-caps bg-tertiary text-on-tertiary border-[2px] border-on-surface px-2 py-1"
-              >GitHub Pages</span
-            >
+
+          <div class="flex flex-wrap items-center justify-between gap-4 pt-4 border-t-[3px] border-on-surface">
+            <div class="flex flex-wrap gap-2">
+              <span class="font-label-caps text-xs bg-tertiary text-on-tertiary border-[2px] border-on-surface px-2 py-1">A* Algorithm</span>
+              <span class="font-label-caps text-xs bg-tertiary text-on-tertiary border-[2px] border-on-surface px-2 py-1">Valhalla API</span>
+              <span class="font-label-caps text-xs bg-tertiary text-on-tertiary border-[2px] border-on-surface px-2 py-1">JavaScript</span>
+              <span class="font-label-caps text-xs bg-tertiary text-on-tertiary border-[2px] border-on-surface px-2 py-1">Leaflet / OSM</span>
+              <span class="font-label-caps text-xs bg-tertiary text-on-tertiary border-[2px] border-on-surface px-2 py-1">GitHub Pages</span>
+            </div>
+            <div class="flex flex-wrap gap-3">
+              <a
+                href="https://go-pai.github.io/rute-rumah-sakit/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="bg-tertiary text-on-tertiary border-[2px] border-on-surface shadow-[3px_3px_0px_0px_rgba(0,0,0,1)] px-4 py-2 font-bold no-underline hover:bg-secondary-fixed hover:text-on-surface transition-colors uppercase text-xs flex items-center gap-1.5"
+              >
+                <span class="material-symbols-outlined text-sm">open_in_new</span> Live Demo
+              </a>
+              <a
+                href="https://jurnal.itg.ac.id/index.php/algoritma/article/view/2397/1864"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="bg-surface-container-highest text-on-surface border-[2px] border-on-surface shadow-[3px_3px_0px_0px_rgba(0,0,0,1)] px-4 py-2 font-bold no-underline hover:bg-secondary hover:text-on-secondary transition-colors uppercase text-xs flex items-center gap-1.5"
+              >
+                <span class="material-symbols-outlined text-sm">article</span> Baca Jurnal (Sinta 3)
+              </a>
+            </div>
           </div>
         </div>
       </div>
     </div>
 
-    <!-- Timeline Item 3: Right Side (Desktop) - School Attendance System -->
+    <!-- Timeline Item 4: School Attendance System -->
     <div
-      class="relative flex md:justify-end items-center w-full mb-16 pl-12 md:pl-0 z-10 group reveal"
+      class="relative mb-12 md:mb-16 group reveal"
+      style="transition-delay: 250ms;"
+    >
+      <!-- Node Marker -->
+      <div
+        class="absolute -left-[26px] md:-left-[47px] top-6 w-5 h-5 md:w-6 md:h-6 bg-[#fb923c] border-[3px] md:border-[4px] border-on-surface rounded-none -translate-x-1/2 z-20 group-hover:bg-secondary-fixed transition-colors shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]"
+      >
+      </div>
+      <!-- Stem Connector -->
+      <div
+        class="absolute -left-[20px] md:-left-[40px] top-[30px] md:top-[32px] w-[20px] md:w-[40px] h-[4px] md:h-[6px] bg-on-surface z-10"
+      >
+      </div>
+
+      <!-- Main Container Card -->
+      <div
+        class="w-full bg-surface-container-lowest border-[4px] border-on-surface shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] neo-interactive cursor-default"
+      >
+        <div class="border-b-[4px] border-on-surface p-4 md:p-6 bg-[#ffedd5]">
+          <div class="flex justify-between items-start flex-wrap gap-2">
+            <div>
+              <span
+                class="font-label-caps text-label-caps uppercase bg-on-surface text-surface-container-lowest px-2 py-0.5 mb-2 inline-block font-bold"
+              >
+                COMMUNITY / INTERNSHIP
+              </span>
+              <h3
+                class="font-headline-md text-headline-md font-bold text-on-surface uppercase"
+              >
+                Full-Stack Developer
+              </h3>
+              <h4
+                class="font-body-lg text-body-lg text-on-surface-variant font-bold flex items-center gap-2 mt-1"
+              >
+                <span class="material-symbols-outlined text-base">school</span>
+                Sekolah Dasar Negeri (SDN) — School Attendance System
+              </h4>
+            </div>
+            <span
+              class="font-label-caps text-label-caps bg-on-surface text-surface-container-lowest px-3 py-1 font-bold"
+            >
+              INTERNSHIP
+            </span>
+          </div>
+        </div>
+
+        <div class="p-4 md:p-6 bg-surface-container-lowest">
+          <ul class="space-y-3 mb-6">
+            <li class="font-body-md text-body-md text-on-surface flex items-start">
+              <span class="material-symbols-outlined mr-2 shrink-0 fill text-sm mt-0.5" style="font-variation-settings: 'FILL' 1;" data-icon="square">square</span>
+              <span>Membangun sistem informasi presensi berbasis web untuk guru dan murid yang dilengkapi dengan fitur rekapitulasi data otomatis dan ekspor laporan berkala ke format Excel.</span>
+            </li>
+            <li class="font-body-md text-body-md text-on-surface flex items-start">
+              <span class="material-symbols-outlined mr-2 shrink-0 fill text-sm mt-0.5" style="font-variation-settings: 'FILL' 1;" data-icon="square">square</span>
+              <span>Mengembangkan modul pendaftaran siswa baru secara online dan melakukan konfigurasi deployment server produksi di <strong>InfinityFree</strong>.</span>
+            </li>
+          </ul>
+
+          <div class="flex flex-wrap items-center justify-between gap-4 pt-4 border-t-[3px] border-on-surface">
+            <div class="flex flex-wrap gap-2">
+              <span class="font-label-caps text-xs bg-tertiary text-on-tertiary border-[2px] border-on-surface px-2 py-1">PHP</span>
+              <span class="font-label-caps text-xs bg-tertiary text-on-tertiary border-[2px] border-on-surface px-2 py-1">MySQL</span>
+              <span class="font-label-caps text-xs bg-tertiary text-on-tertiary border-[2px] border-on-surface px-2 py-1">Excel Export</span>
+              <span class="font-label-caps text-xs bg-tertiary text-on-tertiary border-[2px] border-on-surface px-2 py-1">InfinityFree</span>
+            </div>
+            <div>
+              <span
+                class="inline-flex items-center gap-2 bg-surface-container-high text-on-surface border-[2px] border-on-surface shadow-[3px_3px_0px_0px_rgba(0,0,0,1)] px-4 py-2 font-bold uppercase text-xs cursor-default select-none"
+              >
+                <span class="material-symbols-outlined text-sm">lock</span> Sistem Internal Sekolah (Restricted)
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Timeline Item 5: Universitas Muhammadiyah Bengkulu -->
+    <div
+      class="relative mb-8 group reveal"
       style="transition-delay: 300ms;"
     >
-      <!-- Stem Connector -->
-      <div
-        class="absolute left-[16px] md:left-1/2 w-8 md:w-16 h-[8px] bg-on-surface md:-translate-x-full"
-      >
-      </div>
       <!-- Node Marker -->
       <div
-        class="absolute left-[16px] md:left-1/2 w-6 h-6 bg-surface border-[4px] border-on-surface rounded-none -translate-x-1/2 -translate-y-1/2 top-1/2 z-20 group-hover:bg-secondary-fixed transition-colors"
+        class="absolute -left-[26px] md:-left-[47px] top-6 w-5 h-5 md:w-6 md:h-6 bg-[#38bdf8] border-[3px] md:border-[4px] border-on-surface rounded-none -translate-x-1/2 z-20 group-hover:bg-secondary-fixed transition-colors shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]"
       >
       </div>
-
-      <div
-        class="w-full md:w-[calc(50%-48px)] bg-surface-container-lowest border-[4px] border-on-surface shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] neo-interactive cursor-default hover:bg-surface-bright"
-      >
-        <div class="border-b-[4px] border-on-surface p-4 bg-surface-container-high">
-          <div class="flex justify-between items-start flex-wrap gap-2">
-            <h3
-              class="font-headline-md text-headline-md font-bold text-on-surface uppercase"
-            >
-              Full-Stack Developer
-            </h3>
-            <span
-              class="font-label-caps text-label-caps bg-on-surface text-surface-container-lowest px-2 py-1"
-              >INTERNSHIP</span
-            >
-          </div>
-          <h4 class="font-body-lg text-body-lg text-on-surface-variant mt-2 font-bold">
-            Sekolah Dasar Negeri (SDN) — School Attendance System
-          </h4>
-        </div>
-        <div class="p-4 bg-surface-container-lowest">
-          <ul class="space-y-3">
-            <li
-              class="font-body-md text-body-md text-on-surface flex items-start border-b-[4px] border-on-surface pb-2 border-opacity-20 hover:bg-secondary-fixed transition-colors"
-            >
-              <span
-                class="material-symbols-outlined mr-2 shrink-0 fill"
-                style="font-variation-settings: 'FILL' 1;"
-                data-icon="square">square</span
-              >
-              Membangun sistem absensi lengkap untuk guru dan murid yang dilengkapi
-              dengan fitur rekap laporan dalam format Excel.
-            </li>
-            <li
-              class="font-body-md text-body-md text-on-surface flex items-start border-b-[4px] border-on-surface pb-2 border-opacity-20 hover:bg-secondary-fixed transition-colors"
-            >
-              <span
-                class="material-symbols-outlined mr-2 shrink-0 fill"
-                style="font-variation-settings: 'FILL' 1;"
-                data-icon="square">square</span
-              >
-              Menambahkan modul pendaftaran siswa baru dan berhasil melakukan deploy
-              aplikasi di server InfinityFree.
-            </li>
-          </ul>
-          <div class="mt-4 flex flex-wrap gap-2">
-            <span
-              class="font-label-caps text-label-caps bg-tertiary text-on-tertiary border-[2px] border-on-surface px-2 py-1"
-              >PHP</span
-            >
-            <span
-              class="font-label-caps text-label-caps bg-tertiary text-on-tertiary border-[2px] border-on-surface px-2 py-1"
-              >MySQL</span
-            >
-            <span
-              class="font-label-caps text-label-caps bg-tertiary text-on-tertiary border-[2px] border-on-surface px-2 py-1"
-              >Excel Export</span
-            >
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Timeline Item 4: Left Side (Desktop) - UMB -->
-    <div
-      class="relative flex md:justify-start items-center w-full mb-16 pl-12 md:pl-0 z-10 group reveal"
-      style="transition-delay: 450ms;"
-    >
       <!-- Stem Connector -->
       <div
-        class="absolute left-[16px] md:left-[calc(50%+16px)] md:w-16 h-[8px] bg-on-surface hidden md:block"
-      >
-      </div>
-      <div class="absolute left-[16px] w-8 h-[8px] bg-on-surface md:hidden">
-      </div>
-      <!-- Node Marker -->
-      <div
-        class="absolute left-[16px] md:left-1/2 w-6 h-6 bg-surface border-[4px] border-on-surface rounded-none -translate-x-1/2 -translate-y-1/2 top-1/2 z-20 group-hover:bg-secondary-fixed transition-colors"
+        class="absolute -left-[20px] md:-left-[40px] top-[30px] md:top-[32px] w-[20px] md:w-[40px] h-[4px] md:h-[6px] bg-on-surface z-10"
       >
       </div>
 
+      <!-- Main Container Card -->
       <div
-        class="w-full md:w-[calc(50%-48px)] bg-surface-container-lowest border-[4px] border-on-surface shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] neo-interactive cursor-default hover:bg-surface-bright"
+        class="w-full bg-surface-container-lowest border-[4px] border-on-surface shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] neo-interactive cursor-default"
       >
-        <div class="border-b-[4px] border-on-surface p-4 bg-surface-container-highest">
+        <div class="border-b-[4px] border-on-surface p-4 md:p-6 bg-[#e0f2fe]">
           <div class="flex justify-between items-start flex-wrap gap-2">
-            <h3
-              class="font-headline-md text-headline-md font-bold text-on-surface uppercase"
-            >
-              Web Developer
-            </h3>
-            <span
-              class="font-label-caps text-label-caps bg-on-surface text-surface-container-lowest px-2 py-1"
-              >PROJECT</span
-            >
-          </div>
-          <h4 class="font-body-lg text-body-lg text-on-surface-variant mt-2 font-bold">
-            Universitas Muhammadiyah Bengkulu
-          </h4>
-        </div>
-        <div class="p-4 bg-surface-container-lowest">
-          <ul class="space-y-3">
-            <li
-              class="font-body-md text-body-md text-on-surface flex items-start border-b-[4px] border-on-surface pb-2 border-opacity-20 hover:bg-secondary-fixed transition-colors"
-            >
+            <div>
               <span
-                class="material-symbols-outlined mr-2 shrink-0 fill"
-                style="font-variation-settings: 'FILL' 1;"
-                data-icon="square">square</span
+                class="font-label-caps text-label-caps uppercase bg-on-surface text-surface-container-lowest px-2 py-0.5 mb-2 inline-block font-bold"
               >
-              Mengembangkan website landing page informasi untuk program studi Teknik
-              Informatika menggunakan WordPress.
+                ACADEMIC / INSTITUTIONAL
+              </span>
+              <h3
+                class="font-headline-md text-headline-md font-bold text-on-surface uppercase"
+              >
+                Web Developer
+              </h3>
+              <h4
+                class="font-body-lg text-body-lg text-on-surface-variant font-bold flex items-center gap-2 mt-1"
+              >
+                <span class="material-symbols-outlined text-base">account_balance</span>
+                Universitas Muhammadiyah Bengkulu
+              </h4>
+            </div>
+            <span
+              class="font-label-caps text-label-caps bg-on-surface text-surface-container-lowest px-3 py-1 font-bold"
+            >
+              PROJECT
+            </span>
+          </div>
+        </div>
+
+        <div class="p-4 md:p-6 bg-surface-container-lowest">
+          <ul class="space-y-3 mb-6">
+            <li class="font-body-md text-body-md text-on-surface flex items-start">
+              <span class="material-symbols-outlined mr-2 shrink-0 fill text-sm mt-0.5" style="font-variation-settings: 'FILL' 1;" data-icon="square">square</span>
+              <span>Mengembangkan website landing page dan portal informasi resmi untuk program studi Teknik Informatika UMB menggunakan WordPress CMS.</span>
             </li>
           </ul>
-          <div class="mt-4 flex flex-wrap gap-4">
-            <a
-              href="https://ft-informatika.umb.ac.id/"
-              target="_blank"
-              class="bg-secondary text-on-secondary border-[2px] border-on-surface shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] px-4 py-2 font-bold no-underline hover:bg-secondary-fixed hover:text-on-surface transition-colors uppercase text-sm"
-            >
-              Kunjungi Website
-            </a>
-          </div>
-          <div class="mt-6 flex flex-wrap gap-2">
-            <span
-              class="font-label-caps text-label-caps bg-secondary text-on-secondary border-[2px] border-on-surface px-2 py-1"
-              >WordPress</span
-            >
-            <span
-              class="font-label-caps text-label-caps bg-secondary text-on-secondary border-[2px] border-on-surface px-2 py-1"
-              >CMS</span
-            >
+
+          <div class="flex flex-wrap items-center justify-between gap-4 pt-4 border-t-[3px] border-on-surface">
+            <div class="flex flex-wrap gap-2">
+              <span class="font-label-caps text-xs bg-secondary text-on-secondary border-[2px] border-on-surface px-2 py-1">WordPress</span>
+              <span class="font-label-caps text-xs bg-secondary text-on-secondary border-[2px] border-on-surface px-2 py-1">CMS</span>
+            </div>
+            <div>
+              <a
+                href="https://ft-informatika.umb.ac.id/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="bg-secondary text-on-secondary border-[2px] border-on-surface shadow-[3px_3px_0px_0px_rgba(0,0,0,1)] px-4 py-2 font-bold no-underline hover:bg-secondary-fixed hover:text-on-surface transition-colors uppercase text-xs flex items-center gap-1.5"
+              >
+                <span class="material-symbols-outlined text-sm">open_in_new</span> Kunjungi Website
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -429,8 +607,8 @@
 <style>
   .reveal {
     opacity: 0;
-    transform: translateY(40px);
-    transition: all 0.8s cubic-bezier(0.5, 0, 0, 1);
+    transform: translateY(30px);
+    transition: all 0.7s cubic-bezier(0.5, 0, 0, 1);
   }
   .reveal.active {
     opacity: 1;
@@ -447,12 +625,13 @@
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
             entry.target.classList.add("active");
-          } else {
-            entry.target.classList.remove("active");
           }
         });
       },
-      { threshold: 0.1 },
+      {
+        threshold: 0.1,
+        rootMargin: "0px 0px -50px 0px",
+      }
     );
 
     reveals.forEach((reveal) => {
@@ -460,6 +639,9 @@
     });
   };
 
+  // Run on page load
   document.addEventListener("DOMContentLoaded", observeTimeline);
+
+  // Run on Astro view transitions
   document.addEventListener("astro:page-load", observeTimeline);
 </script>
