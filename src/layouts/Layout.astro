@@ -50,22 +50,5 @@ const {
     <!-- Top Navigation Placeholder (We'll put it in index or layout) -->
 
     <slot />
-
-    <!-- Optional JS for nav hide on scroll could go here or in a component -->
-    <script>
-      let lastScrollY = window.scrollY;
-      const nav = document.getElementById("topNav");
-
-      if (nav) {
-        window.addEventListener("scroll", () => {
-          if (window.scrollY > lastScrollY && window.scrollY > 100) {
-            nav.style.transform = "translateY(-100%)";
-          } else {
-            nav.style.transform = "translateY(0)";
-          }
-          lastScrollY = window.scrollY;
-        });
-      }
-    </script>
   </body>
 </html>
